@@ -613,7 +613,7 @@ John doesn&#39;t seem to be buying your pleads for understanding, instead he sha
 He lights the blow torch and begins to walk towards you. 
 [[Launch the second Probe]]
 [[Try to find a weapon]]
-</tw-passagedata><tw-passagedata pid="105" name="Listen to the voice" tags="" position="1405,5492" size="100,100">You let the whispers flood your mind, a cacophony of voices all saying different things in languages you can&#39;t even comprehend. They slowly begin to merge into one low, powerful voice, (text-style: &quot;shudder&quot;)[[[Assimilate|Assimilate]]]</tw-passagedata><tw-passagedata pid="106" name="Resist the voice" tags="" position="1555,5492" size="100,100">You focus for what seems like forever, blocking out every single voice as they enter your thoughts, pressing on your mind, trying to force you to make mistakes you would never dream of making. Eventually though, the voices subside and you continue walking towards the door, John doesn&#39;t seem to have noticed your inner struggle or that it too so long, instead he is wearing his usual determined, angry facial expression. 
+(set: $counter to 3)</tw-passagedata><tw-passagedata pid="105" name="Listen to the voice" tags="" position="1405,5492" size="100,100">You let the whispers flood your mind, a cacophony of voices all saying different things in languages you can&#39;t even comprehend. They slowly begin to merge into one low, powerful voice, (text-style: &quot;shudder&quot;)[[[Assimilate|Assimilate]]]</tw-passagedata><tw-passagedata pid="106" name="Resist the voice" tags="" position="1555,5492" size="100,100">You focus for what seems like forever, blocking out every single voice as they enter your thoughts, pressing on your mind, trying to force you to make mistakes you would never dream of making. Eventually though, the voices subside and you continue walking towards the door, John doesn&#39;t seem to have noticed your inner struggle or that it too so long, instead he is wearing his usual determined, angry facial expression. 
 
 [[Go to your room]]
 </tw-passagedata><tw-passagedata pid="107" name="Assimilate" tags="" position="1386,5641" size="100,100">Your own thoughts slowly fade away as you slowly realize that your body is no longer yours. The voices grow louder and louder within your mind until you feel like you too are shouting along with them. John&#39;s face turns from anger and determination to confusion and fear. You grab the closest weapon you can find, a pen John was using to take notes, and slowly approach John. 
@@ -642,13 +642,39 @@ A low rumble begins eminating from an open spot in your room as a dot of black b
 [[What is it?]]</tw-passagedata><tw-passagedata pid="113" name="What is it?" tags="" position="1587,5944" size="100,100">The voice enters your head once again, (text-colour:red)[This is your opportunity to defeat your father, to escape from his power, forge your own path.]. You take a hard look at the scenery on the other side of the portal, it appears to be a facility of some sort, in the aftermath of some catastrophe. 
 
 [[Go through the portal]]
-[[Refuse]]</tw-passagedata><tw-passagedata pid="114" name="Go through the portal" tags="" position="1512,6094" size="100,100">You take moment to think, then begin to pack up a small amount of things, your textbooks, some clothes, and your portable terminal. You walk up to the portla, take a deep breath, and step through unsure of what fate awaits your father in the depths of space and you in this new place.</tw-passagedata><tw-passagedata pid="115" name="Refuse" tags="" position="1662,6094" size="100,100">You take a moment to weigh your options, either you step through this suspicious portal opened by an unseen entity or you stay here, face the Scientific Ethics Board and probably have your doctorate revoked. 
+[[Refuse]]</tw-passagedata><tw-passagedata pid="114" name="Go through the portal" tags="" position="1512,6094" size="100,100">You take moment to think, then begin to pack up a small amount of things, your textbooks, some clothes, and your portable terminal. You walk up to the portal, take a deep breath, and step through unsure of what fate awaits your father in the depths of space and you in this new place.
+
+END</tw-passagedata><tw-passagedata pid="115" name="Refuse" tags="" position="1662,6094" size="100,100">You take a moment to weigh your options, either you step through this suspicious portal opened by an unseen entity or you stay here, face the Scientific Ethics Board and probably have your doctorate revoked. 
 You think for a moment and shake your head, maybe having your doctorate revoked could give you an opportunity to explore your own hobbies....
-(link:&quot;The portal shuts&quot;)[After a couple of minutes the portal swirls shut and the low rumble that introduced it folows it once more. The voice does not come back thoug, clearly disappointed by your decision. You are unsure if there will be any consequences for refusing this being but what you do know is you can finally live the life you want once you get home. ]</tw-passagedata><tw-passagedata pid="116" name="Launch the second Probe" tags="" position="1748,5514" size="100,100">You quickly turn to the terminal and press launch on the second probe. A **THUNK** echoes through the chamber as the probe launches towards (if: $Trajectory is 1)[Kronos](else:)[the nearby planet]. John rushes you before you can watch the probe and tackles you to the ground, the blowtorch still on. 
+(link:&quot;The portal shuts&quot;)[After a couple of minutes the portal swirls shut and the low rumble that introduced it folows it once more. The voice does not come back thoug, clearly disappointed by your decision. You are unsure if there will be any consequences for refusing this being but what you do know is you can finally live the life you want once you get home. 
+
+END]</tw-passagedata><tw-passagedata pid="116" name="Launch the second Probe" tags="" position="1748,5514" size="100,100">You quickly turn to the terminal and press launch on the second probe. A **THUNK** echoes through the chamber as the probe launches towards (if: $Trajectory is 1)[Kronos](else:)[the nearby planet]. John rushes you before you can watch the probe and tackles you to the ground, the blowtorch still on. 
 You brace your arms against John&#39;s, the heat of the blowtorch singing your eyebrows. 
 
+(set: $counter to 3)
+|amount&gt;[$counter]
+
+(live: 1s)[
+    (set: $counter to it - 1)
+    (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
+    (replace: ?amount)[$counter]
+]
 [[Try to find a weapon]]
-[[Strike him]]</tw-passagedata><tw-passagedata pid="117" name="Try to find a weapon" tags="" position="1898,5514" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="118" name="Strike him" tags="" position="1748,5664" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Strike him]]</tw-passagedata><tw-passagedata pid="117" name="Try to find a weapon" tags="" position="1966,5595" size="100,100">(set: $counter to 3)
+|amount&gt;[$counter]
+
+(live: 1s)[
+    (set: $counter to it - 1)
+    (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
+    (replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="118" name="Strike him" tags="" position="1748,5664" size="100,100">(set: $counter to 3)
+|amount&gt;[$counter]
+
+(live: 1s)[
+    (set: $counter to it - 1)
+    (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
+    (replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="119" name="Subdued" tags="" position="2041,5806.2001953125" size="100,100">You struggle to make a decision and John seizes the opportunity, taking the butt of the blow torch and hitting you on the side of the head. Your vision slowly fades to black as he </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
