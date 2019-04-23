@@ -12,7 +12,7 @@
 <tw-story></tw-story>
 
 <tw-storydata name="Chernobyl" startnode="1" creator="Twine" creator-version="2.2.1" ifid="91C49168-54CB-44D1-B63C-DE75AACF202E" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
-	background-image: linear-gradient(#c4c4c4, #000000);
+	background-color: #939393;
 	font-family: 'Roboto Mono', monospace;
   	text-align: center;
   	color: black;
@@ -26,9 +26,11 @@ tw-link, .visited{
   	color: white;
 }
 tw-link:hover, .visited:hover {
-	color: #dbd9d9;
+	color: #ffcc00;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 </script><tw-passagedata pid="1" name="April 26, 1986" tags="" position="400,200" size="100,100">[[April 26, 1986 -&gt; Who are you?]]</tw-passagedata><tw-passagedata pid="2" name=" Who are you?" tags="" position="467,340" size="100,100">You are a nuclear reactor operator in the Soviet Union&#39;s first nuclear energy facility: [[Chernobyl. -&gt; Your Position]]</tw-passagedata><tw-passagedata pid="3" name=" Your Position" tags="" position="530,490" size="100,100">Your position has landed you a comfortable living and a home for your wife and child in the posh city of Pripyat nearby. Shopping districts, beaches on the scenic Pripyat river, even an amusement park are available for any resident. Everyone who lives here works at the power station.
@@ -39,33 +41,43 @@ tw-link:hover, .visited:hover {
 
 [[Next-&gt;If you fail]]</tw-passagedata><tw-passagedata pid="6" name="If you fail" tags="" position="530,940" size="100,100">If you fail to follow order from your superiors, you and your family will be exiled to a remote outpost in Siberia.
 
-[[Next-&gt;Ready]]</tw-passagedata><tw-passagedata pid="7" name="Ready" tags="" position="420,1090" size="100,100">When you&#39;re ready, [[enter the control room]].</tw-passagedata><tw-passagedata pid="8" name="enter the control room" tags="" position="310,1240" size="100,100">00:00
+[[Next-&gt;Ready]]</tw-passagedata><tw-passagedata pid="7" name="Ready" tags="" position="420,1090" size="100,100">When you&#39;re ready, [[enter the control room]].
+(set: $power to 1000)</tw-passagedata><tw-passagedata pid="8" name="enter the control room" tags="" position="310,1240" size="100,100">00:00 - (print: $power) Megawatts
+
 
 [[Akimov]] glances over warmly at you. 
 
 &quot;Greetings, Toptunov. Are you ready to [[begin the test]]?&quot;</tw-passagedata><tw-passagedata pid="9" name="Akimov" tags="" position="142,1254" size="100,100">Aleksandr Akimov is the head engineer of the night crew in Chernobyl&#39;s Reactor #4. He has always been kind to you, he even brought some Stuffed Cabbage Rolls when your wife was going through labor. He wants everyone in his facility to be safe and feel cared for.
 
-[[Back to the control room.-&gt;enter the control room]] </tw-passagedata><tw-passagedata pid="10" name="begin the test" tags="" position="525,1349" size="100,100">00:00 - 1000 Megawatts
+[[Back to the control room.-&gt;enter the control room]] </tw-passagedata><tw-passagedata pid="10" name="begin the test" tags="" position="525,1349" size="100,100">00:00 - (print: $power) Megawatts
+
 
 &quot;Of course he&#39;s ready,&quot; [[Dyatlov]] cuts in gruffly. &quot;[[Get to your station]], Toptunov. We need to lower our energy intake down to 200 Megawatts for our test tonight.&quot;
 
 </tw-passagedata><tw-passagedata pid="11" name="Dyatlov" tags="" position="730,1253" size="100,100">Tonight Akimov is outranked by Anatoly Dyatlov.
 
-Dyatlov is the deputy chief-engineer at Chernobyl, and one of the top nuclear engineers in the Soviet Union. He is usually not present, but has been asked by the reactor&#39;s director to sit in on tonight&#39;s test. Everyone knows he&#39;s ambitious to prove he&#39;s leader material - he ran away from his fishing village at 14 to begin his education and career as an engineer in the Soviet military. He began installing reactors on submarines back in 1959, and was promoted to his position at Chernobyl for his efficient work and domineering attitude toward inferiors. 
+Dyatlov is the deputy chief-engineer at Chernobyl, and one of the top nuclear engineers in the Soviet Union. He is usually not present, but has been asked by the reactor&#39;s director to sit in on tonight&#39;s test. 
 
-[[Next]]</tw-passagedata><tw-passagedata pid="12" name="Next" tags="" position="720,1387" size="100,100">His son recently died of Leukemia.
+(link:&quot;Next&quot;)[Everyone knows he&#39;s ambitious to prove he&#39;s leader material - he ran away from his fishing village at 14 to begin his education and career as an engineer in the Soviet military.]
 
-[[Back to the control room-&gt;begin the test]]</tw-passagedata><tw-passagedata pid="13" name="Lower Power" tags="" position="706,1750" size="100,100">00:20 - 750 Megawatts
+(link:&quot;Next&quot;)[He began installing reactors on submarines back in 1959, and was promoted to his position at Chernobyl for his efficient work and domineering attitude toward inferiors. 
 
-Everything seems to be running normally. Akimov gives you a thumbs up. 
+[[Next]]]</tw-passagedata><tw-passagedata pid="12" name="Next" tags="" position="720,1387" size="100,100">His son recently died of Leukemia.
 
-[[Next-&gt;Power too low]]</tw-passagedata><tw-passagedata pid="14" name="Get to your station" tags="" position="525,1499" size="100,100">00:00 - 1000 Megawatts
+[[Back to the control room-&gt;begin the test]]</tw-passagedata><tw-passagedata pid="13" name="Lower Power" tags="" position="706,1750" size="100,100">
+00:20 - (print: $power) Megawatts
+
+Dyatlov smiles at your obedience.
+Everything seems to be running normally. 
+Akimov gives you a thumbs up. 
+
+[[Next-&gt;Power too low]]</tw-passagedata><tw-passagedata pid="14" name="Get to your station" tags="" position="525,1499" size="100,100">00:00 - (print: $power) Megawatts
 
 You are aware that it is unsafe to drop below 700 Megawatts.
 
-[[Lower Power]] 
+(link: &quot;Lower Power&quot; )[(set: $power to 750)(goto: &quot;Lower Power&quot;)]
 [[Raise Power]]
-[[Tell Dyatlov that it&#39;s dangerous to bring the reactor that low]]</tw-passagedata><tw-passagedata pid="15" name="Raise Power" tags="" position="348,1864" size="100,100">00:10 - 1100 Megawatts
+[[Tell Dyatlov that it&#39;s dangerous to bring the reactor that low]]</tw-passagedata><tw-passagedata pid="15" name="Raise Power" tags="" position="346,1822" size="100,100">00:10 - 1100 Megawatts
 
 Dyatlov scowls at you, his grey brow furrowed in anger.
 
@@ -80,46 +92,53 @@ You notice that the power in the reactor has fallen below the standardized safet
 [[Alert Dyatlov]]
 [[Say nothing]]</tw-passagedata><tw-passagedata pid="17" name="Alert Akimov" tags="" position="780,2005" size="100,100">00:28 - 523 Megawatts
 
-&quot;Hmmm, you&#39;re right, this is concerning. I&#39;ll tell Dyatlov.&quot;
+You point to a section in the worker&#39;s manual that clearly states that 700 Megawatts is the lowest the reactor should be run at.
+
+&quot;Hmmm, you&#39;re right, this is concerning. But I remember Dyatlov told us that the test is to be run at 200 Megawatts. Maybe he had the number wrong. I&#39;ll go ask him.&quot;
 
 [[Next-&gt;Alert Dyatlov]] </tw-passagedata><tw-passagedata pid="18" name="Alert Dyatlov" tags="" position="930,2005" size="100,100">00:29 - 512 Megawatts
 
-&quot;You don&#39;t need to tell me anything. It&#39;s not your job to think. I make the decisions here, just [[do what you&#39;re told]].
+&quot;You don&#39;t need to tell me anything. It&#39;s not your job to think. I make the decisions here, just do what you&#39;re told.
 
 Where did you get such idiots, Akimov?&quot;
 
-</tw-passagedata><tw-passagedata pid="19" name="Say nothing" tags="" position="1080,2005" size="100,100">00:29 - 512 Megawatts
+[[Do what you&#39;re told.-&gt;do what you&#39;re told]]</tw-passagedata><tw-passagedata pid="19" name="Say nothing" tags="" position="1080,2005" size="100,100">00:29 - 512 Megawatts
 
 You decide to stay silent. Nobody else is aware of the dangerous power levels.
 
-[[Next-&gt;do what you&#39;re told]] </tw-passagedata><tw-passagedata pid="20" name="do what you&#39;re told" tags="" position="930,2155" size="100,100">00:31 - 230 Megawatts
+[[Next-&gt;do what you&#39;re told]] </tw-passagedata><tw-passagedata pid="20" name="do what you&#39;re told" tags="" position="930,2155" size="100,100">00:31 - 190 Megawatts
 
-An alarm start beeping. Winding the power down has led to the power dropping too much.
+An alarm start beeping. Winding the reactor down has led to the power dropping too much!
 
-&quot;What&#39;s going on?&quot; Dyatlov shouts. &quot;You idiot, you&#39;ve let the power drop too far! You incompetent fool! Akimov, [[help him out.]]&quot;
-</tw-passagedata><tw-passagedata pid="21" name="help him out." tags="" position="930,2305" size="100,100">00:32 - 190 Megawatts
+&quot;What&#39;s going on?&quot; Dyatlov shouts. &quot;You idiot, you&#39;ve let the power drop too far! You incompetent fool! Akimov, help him out.&quot;
+
+[[Next-&gt;help him out.]]</tw-passagedata><tw-passagedata pid="21" name="help him out." tags="" position="930,2305" size="100,100">00:32 - 150 Megawatts
 
 &quot;Just stay calm, Leonid, it&#39;s alright. Let&#39;s start from the beginning.&quot;
 
 Akimov turns off the alarm.
 
-[[Next-&gt;water danger]]</tw-passagedata><tw-passagedata pid="22" name="water danger" tags="" position="930,2455" size="100,100">00:36 - 100 Megawatts
+[[Next-&gt;water danger]]</tw-passagedata><tw-passagedata pid="22" name="water danger" tags="" position="930,2455" size="100,100">00:36 - 70 Megawatts
 
-Another alarm starts blaring from the water control system. 
+Power is still dropping rapidly.
+
+Another alarm starts blaring from the water control system. You can hear Dyatlov shouting at the water systems operator,
 
 &quot;Turn that damn racket off!&quot;
 
-Akimov rushes over to the water systems operator to help him sort out the issue.
+You and Akimov sigh in relief, no longer under the direct scrutiny of your superior.
 
-Power is still dropping quickly.
 
 [[Next-&gt;halt]]</tw-passagedata><tw-passagedata pid="23" name="halt" tags="" position="930,2605" size="100,100">00:38 - 0 Megawatts
 
 The reactor has completely halted.
 
-&quot;You stalled the reactor, you complete moron! Remove the control rods and [[power up now! -&gt;Power up now!]]
+Your short-lived relief has come to an end as your station starts blaring another alarm and Dyaltov comes dashing over.
 
-[[Resist]]</tw-passagedata><tw-passagedata pid="24" name="Power up now!" tags="" position="855,2755" size="100,100">00:42 - 30 Megawatts
+&quot;You stalled the reactor, you complete moron! Remove the control rods and power up now! 
+
+[[Remove the control rods-&gt;Power up now!]]
+[[This is dangerous...-&gt;Resist]]</tw-passagedata><tw-passagedata pid="24" name="Power up now!" tags="" position="855,2755" size="100,100">00:42 - 30 Megawatts
 
 You&#39;ve flipped the switch to pull the control rods. You no longer have any control over the reactor&#39;s power, but at least the energy is rising again and Dyatlov is appeased.
 
@@ -138,75 +157,73 @@ Akimov grimaces.
 
 &quot;Wonderful,&quot; Dyatlov remarks. &quot;Now we may finally begin the test. [[Turn off the turbine.]] Let us see how this reactor will do on back up diesel power.
 
-[[Resist-&gt;resist again]]</tw-passagedata><tw-passagedata pid="28" name="Akimov agrees." tags="" position="1118,2896" size="100,100">&quot;If we pull out the control rods and raise the power, we will have no control over the reactor. We need to shut it off.&quot;
+[[Make a plan with Akimov]]</tw-passagedata><tw-passagedata pid="28" name="Akimov agrees." tags="" position="1118,2896" size="100,100">&quot;If we pull out the control rods and raise the power, we will have no control over the reactor. We need to shut it off.&quot;
 
 Dyatlov&#39;s face turns tomato red in rage.
 
-&quot;I&#39;ve had enough delays from you cretins. This test will be done TONIGHT! [[Pull those control rods-&gt;Power up now!]] NOW!&quot;
+&quot;I&#39;ve had enough delays from you cretins. This test will be done TONIGHT! Pull those control rods NOW!&quot;
 
-[[Continue resisting-&gt;Continue resisting-control rods]] </tw-passagedata><tw-passagedata pid="29" name="Turn off the turbine." tags="" position="855,3205" size="100,100">01:05 - 300 Megawatts
+[[Pull those control rods-&gt;Power up now!]]
+[[Don&#39;t pull them-&gt;Continue resisting-control rods]] </tw-passagedata><tw-passagedata pid="29" name="Turn off the turbine." tags="" position="855,3205" size="100,100">01:05 - 300 Megawatts
 
 You switch the turbine off, restricting the flow of water to the reactor. Dyatlov, delighted, gives you a pat on the back.
 
 You notice the power is quickly rising.
 
-[[Next-&gt;power rising]]</tw-passagedata><tw-passagedata pid="30" name="resist again" tags="" position="668,3168" size="100,100">01:04 - 200 Megawatts
+[[Next-&gt;power rising]]</tw-passagedata><tw-passagedata pid="30" name="resist again" tags="" position="625,3305" size="100,100">01:04 - 200 Megawatts
 
 You inform Dyatlov once again that the standardized safety level for the reactor is 700 Megawatts, it is dangerous to procede with the test at the current energy level.
 
 &quot;You dimwit, I make the decisions around here. If you speak out of turn one more time, you won&#39;t get another chance to, understand?&quot;
 
-Akimov nervously enters the conversation. &quot;Sir, I agree with Tuptunov. If we continue with the test...&quot; Dyatlov eyes fill with fire. &quot;...I will need to mark in the logbook that this was your decision and I have advised against it.&quot;
+Akimov nervously enters the conversation. &quot;Sir, I agree with Tuptunov. If we continue with the test...&quot; Dyatlov eyes burn with rage. &quot;...I will need to mark in the logbook that this was your decision and I have advised against it.&quot;
 
-Listen here, Akimov. I have the power to change the parameters of this test and that is exactly what I will do. Now, Tuptunov, [[turn the damn turbine off!-&gt;Turn off the turbine.]]&quot; 
+&quot;Listen here, Akimov. I have the power to change the parameters of this test and that is exactly what I will do. Now, Tuptunov, [[turn the damn turbine off!-&gt;Turn off the turbine.]]&quot; 
 
-[[Rush and bring Dyatlov to the ground]] </tw-passagedata><tw-passagedata pid="31" name="Tell Dyatlov that it&#39;s dangerous to bring the reactor that low" tags="" position="50,1811" size="100,100">00:05 - 1000 Megawatts
+[[Rush and bring Dyatlov to the ground]] </tw-passagedata><tw-passagedata pid="31" name="Tell Dyatlov that it&#39;s dangerous to bring the reactor that low" tags="" position="546,1666" size="100,100">00:05 - 1000 Megawatts
 
 Dyatlov glares at you. &quot;It&#39;s not your job to think, just do it. I&#39;m in charge here you do what I say.&quot;
 
 [[Lower Power]] 
-[[Raise Power]] 
-[[Continue resisting]]</tw-passagedata><tw-passagedata pid="32" name="Continue resisting" tags="" position="132,2048" size="100,100">
+[[Raise Power]] </tw-passagedata><tw-passagedata pid="32" name="Continue resisting" tags="" position="287,2180" size="100,100">
 You tell Dyatlov where he can stick his test parameters, you&#39;re not going to bring the power down to a potentialy unstable level. Akimov smiles, nodding with you.
 
-Dyatlov&#39;s eyes fill with flame. He says nothing, and starts walking towards the phone on the wall.
+Dyatlov&#39;s eyes fill with flame. He says nothing, and starts striding towards the phone on the wall.
 
-[[Grab the phone before he can-&gt;Wrestle the phone from Dyatlov&#39;s hands]]
-[[Try to escape]]
 [[Make a plan with Akimov]]
-[[Lower Power-&gt;Lower Power - Angry]]</tw-passagedata><tw-passagedata pid="33" name="Lower Power - Angry" tags="" position="582,2050" size="100,100">Nervously, you turn the switch to lower the power before Dyatlov reaches the phone. He stops mid-walk as he here&#39;s the switch&#39;s click, and looks at the monitor displaying your copmliance.
+[[Lower Power-&gt;Lower Power - Angry]]</tw-passagedata><tw-passagedata pid="33" name="Lower Power - Angry" tags="" position="606,2186" size="100,100">Nervously, you turn the switch to lower the power before Dyatlov reaches the phone. He stops mid-walk as he here&#39;s the switch&#39;s click, and looks at the monitor displaying your copmliance.
 
 &quot;Now that wasn&#39;t so hard, now was it, Tutinov? You&#39;re still on thin ice.&quot;
 
 Akimov lets out a sigh of relief.
 
-[[Back to monitoring-&gt;do what you&#39;re told]]</tw-passagedata><tw-passagedata pid="34" name="Make a plan with Akimov" tags="" position="108,2316" size="100,100">Dyatlov picks up the phone and starts dialing.
+[[Back to monitoring-&gt;do what you&#39;re told]]</tw-passagedata><tw-passagedata pid="34" name="Make a plan with Akimov" tags="" position="176,2707" size="100,100">Dyatlov picks up the phone and starts dialing.
 
 You turn, terrified, to Akimov and start whispering your need for an ally. He agrees that this situation is dangerous and offers his support. What do you want him to do?
 
 [[Distract Dyatlov while you escape]]
 [[Rush and bring Dyatlov to the ground]]
-[[Wrestle the phone from Dyatlov&#39;s hands]]</tw-passagedata><tw-passagedata pid="35" name="Distract Dyatlov while you escape" tags="" position="393,2272" size="100,100">Akimov grabs whatever papers he can find in his reach and strides over to Dyatlov. Akimov tells Dyatlov to take a look, as the papers are of the utmost urgency.
+[[Wrestle the phone from Dyatlov&#39;s hands]]</tw-passagedata><tw-passagedata pid="35" name="Distract Dyatlov while you escape" tags="" position="483,2663" size="100,100">Akimov grabs whatever papers he can find in his reach and sprints over to Dyatlov. Akimov tells Dyatlov to take a look, as the papers are of the utmost urgency, then flings them in his face.
 
 [[Try to escape]]
-</tw-passagedata><tw-passagedata pid="36" name="Rush and bring Dyatlov to the ground" tags="" position="96,2579" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Wrestle the phone from Dyatlov&#39;s hands" tags="" position="46,2737" size="100,100">Miraculously, you catch Dyatlov by surpise with a hook to his temple. He drops the phone into your waiting hands.
+</tw-passagedata><tw-passagedata pid="36" name="Rush and bring Dyatlov to the ground" tags="" position="183,2895" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Wrestle the phone from Dyatlov&#39;s hands" tags="" position="15,3128" size="100,100">Miraculously, you catch Dyatlov by surpise with a hook to his temple. He drops the phone into your waiting hands.
 
-[[Talk to the director-&gt;Pick up the phone]]</tw-passagedata><tw-passagedata pid="38" name="Try to escape" tags="" position="466,2433" size="100,100">Unfortuately, the room is not very large and several personnel notice you trying to escape. Salivating at the thought of promotion, they tackle you to the ground and pin you down while they call over Dyatlov.
+[[Talk to the director-&gt;Pick up the phone]]</tw-passagedata><tw-passagedata pid="38" name="Try to escape" tags="" position="483,2863" size="100,100">Unfortuately, the room is not very large and several personnel notice you trying to escape. Salivating at the thought of promotion, they tackle you to the ground and pin you while they call over Dyatlov.
 
 
 [[Convince them to help you]]
-[[Don&#39;t struggle, it&#39;s probably for the best that you give in]]</tw-passagedata><tw-passagedata pid="39" name="Convince them to help you" tags="" position="353,2538" size="100,100">You explain to your captors that what Dyatlov wants to do is incredibly dangerous, and could bring the whole facility to the ground. This offense could lead to Dyatlov&#39;s suspension if the director would hear their side of the story, and leave an opening in his position for them to fill.
+[[Don&#39;t struggle, it&#39;s probably for the best that you give in]]</tw-passagedata><tw-passagedata pid="39" name="Convince them to help you" tags="" position="370,2929" size="100,100">You explain to your captors that what Dyatlov wants to do is incredibly dangerous, and could bring the whole facility to the ground. This offense could lead to Dyatlov&#39;s suspension if the director would hear their side of the story, and leave an opening in his position for them to fill.
 
 Their eyes glaze over at the possibility. They weaken their grip, and help you up.
 
 You hear Dyatlov greet the director on the phone, you need to act quick.
 
-[[Time for a mutiny]]</tw-passagedata><tw-passagedata pid="40" name="Don&#39;t struggle, it&#39;s probably for the best that you give in" tags="" position="541,2583" size="100,100">Dyatlov turns his head to see you on the ground. 
+[[Time for a mutiny]]</tw-passagedata><tw-passagedata pid="40" name="Don&#39;t struggle, it&#39;s probably for the best that you give in" tags="" position="598,2944" size="100,100">Dyatlov turns his head to see you on the ground. 
 
-&quot;Well, well, well. Looks like you&#39;re a bigger idiot than even I thought. I&#39;ve got the director on the line right now, and my case to send you to Siberia has just gotten easier to make.&quot;
+&quot;Well, well, well. Looks like you&#39;re a bigger idiot than I thought. I&#39;ve got the director on the line right now, and my case to send you to Siberia has just gotten a lot easier to make.&quot;
 
 You slump your head, ready to [[take whatever is coming to you.]]
-</tw-passagedata><tw-passagedata pid="41" name="take whatever is coming to you." tags="" position="541,2733" size="100,100">WHAM! 
+</tw-passagedata><tw-passagedata pid="41" name="take whatever is coming to you." tags="" position="594,3103" size="100,100">WHAM! 
 
 Akimov slams Dyatlov&#39;s head with a stool, knocking him to the ground out cold.
 
@@ -214,12 +231,13 @@ Your captors, stunned by the fall of their leader, weaken their grip on you enou
 
 &quot;Run, Leonid! You don&#39;t have much time!&quot;
 
-[[Get the hell out of there!]]</tw-passagedata><tw-passagedata pid="42" name="Get the hell out of there!" tags="" position="432,3342" size="100,100">You sprint out the control room door and make your way through the corridors of the power plant towards the exit. Shouts of personnel can be heard echoing through the shafts, and an alarm starts blaring.
+[[Get the hell out of there!]]</tw-passagedata><tw-passagedata pid="42" name="Get the hell out of there!" tags="" position="449,3733" size="100,100">You sprint out the control room door and make your way through the corridors of the power plant towards the exit. Shouts of personnel can be heard echoing through the shafts, and an alarm starts blaring.
 
 You come to a fork in the path, and in your state of confusion you have forgotten which way is out.
 
 [[Take the left path]]
-[[Take the right path]]</tw-passagedata><tw-passagedata pid="43" name="Continue resisting-control rods" tags="" position="266,2057" size="100,100">
+[[Take the right path]]</tw-passagedata><tw-passagedata pid="43" name="Continue resisting-control rods" tags="" position="512,2399" size="100,100">00:39 - 0 Megawatts
+
 You tell Dyatlov where he can stick his control rods, you&#39;re not going to bring the power back on now, it&#39;s far to dangerous. Akimov smiles, nodding with you.
 
 Dyatlov&#39;s eyes fill with flame. He says nothing, and starts walking towards the phone on the wall.
@@ -238,11 +256,11 @@ Low rumbling can be heard from outside the control room.
 
 [[Tell Dyatlov the test is going wrong]]
 [[Call the director-&gt;explosion]]
-[[Get the hell out of there!]]</tw-passagedata><tw-passagedata pid="46" name="Take the left path" tags="" position="323,3486" size="100,100">Path to the reactor.
+[[Get the hell out of there!]]</tw-passagedata><tw-passagedata pid="46" name="Take the left path" tags="" position="340,3877" size="100,100">Path to the reactor.
 
 You are there as it explodes.
 
-Unfinished path</tw-passagedata><tw-passagedata pid="47" name="Take the right path" tags="" position="522,3492" size="100,100">Path outside, you manage to escape
+Unfinished path</tw-passagedata><tw-passagedata pid="47" name="Take the right path" tags="" position="539,3883" size="100,100">Path outside, you manage to escape
 
 Unfinished path</tw-passagedata><tw-passagedata pid="48" name="Tell Dyatlov the test is going wrong" tags="" position="779,3649" size="100,100">01:06 - 3200 Megawatts
 
@@ -256,7 +274,7 @@ You point to the energy gauge, and explain that the reactor is malfunctioning.
 [[Try to escape-&gt;explosion]]
 [[Call the director-&gt;explosion]]
 
-</tw-passagedata><tw-passagedata pid="49" name="explosion" tags="" position="874,3828" size="100,100">Before you have time to do anything, a massive shockwave rocks the entire control room. The lights flash on and off in a strobe, and the steel door to the corridor outside bends in and out like a piece of paper in the wind.
+</tw-passagedata><tw-passagedata pid="49" name="explosion" tags="" position="901,3866" size="100,100">Before you have time to do anything, a massive shockwave rocks the entire control room. The lights flash on and off in a strobe, and the steel door to the corridor outside bends in and out like a piece of paper in the wind.
 
 [[Pray to God]]</tw-passagedata><tw-passagedata pid="50" name="Pray to God" tags="" position="874,3978" size="100,100">The deafening cacophony of shreiking people, bending metal, and resounding explosions fills your ears as you pray to every saint you know that you will survive. 
 
@@ -275,16 +293,16 @@ He starts lumbering toward you before collapsing in a coughing fit.
 
 Dyatlov accepts your proposal, &quot;It would be best, you should get away from the controls.&quot;
 
-Unfinished path</tw-passagedata><tw-passagedata pid="53" name="Time for a mutiny" tags="" position="353,2688" size="100,100">Your group of reactor personnel make their way over to Dyatlov, and before he has a chance to react he is pinned to the ground, yelping. The phone clatters onto the floor.
+Unfinished path</tw-passagedata><tw-passagedata pid="53" name="Time for a mutiny" tags="" position="370,3079" size="100,100">Your group of reactor personnel make their way over to Dyatlov, and before he has a chance to react he is pinned to the ground, yelping. The phone clatters onto the floor.
 
 [[Pick up the phone]]
-[[Get the hell out of there!]] </tw-passagedata><tw-passagedata pid="54" name="Pick up the phone" tags="" position="255,2859" size="100,100">You grab the phone, and bring it up to your ear. You start explaining that Dyatlov is trying to force his workers into a dangerous test, but trail off as your realize you aren&#39;t speaking to the director.
+[[Get the hell out of there!]] </tw-passagedata><tw-passagedata pid="54" name="Pick up the phone" tags="" position="272,3289" size="100,100">You grab the phone, and bring it up to your ear. You start explaining that Dyatlov is trying to force his workers into a dangerous test, but trail off as your realize you aren&#39;t speaking to the director.
 
 Multiple voices speak to you through the phone, multiple pitches, all in unison.
 
-&quot;You must [[complete the test]], Leonid Tuptinov. It must be done.&quot;</tw-passagedata><tw-passagedata pid="55" name="complete the test" tags="" position="235,3009" size="100,100">Your hand lets go of the phone, letting it hit the ground with a crack. The voices echo over and over in your head, worming their way through all of your thoughts. 
+&quot;You must [[complete the test]], Leonid Tuptinov. It must be done.&quot;</tw-passagedata><tw-passagedata pid="55" name="complete the test" tags="" position="252,3400" size="100,100">Your hand lets go of the phone, letting it hit the ground with a crack. The voices echo over and over in your head, worming their way through all of your thoughts. 
 
-&quot;It must be done.&quot;
+[[&quot;It must be done.&quot;]]
 
 Your legs move on their own, bringing you over to your control station. Your hand jerks and brings the power level all the way down to 0. You switch off the turbine.
 
@@ -292,7 +310,7 @@ Dyatlov laughs hysterically from underneath the hands of his captors.
 
 Akimov flashes a look of dread, and stumbles over to you attempting to turn the turbine back on.
 
-[[Laugh with Dyatlov]]</tw-passagedata><tw-passagedata pid="56" name="Laugh with Dyatlov" tags="" position="125,3159" size="100,100">You punch Akimov in the mouth, feeling teeth break and dig into your fist. 
+[[Laugh with Dyatlov]]</tw-passagedata><tw-passagedata pid="56" name="Laugh with Dyatlov" tags="" position="142,3499" size="100,100">You punch Akimov in the mouth, feeling teeth break and dig into your fist. 
 
 Akimov crumbles to ground screaming in pain, blood pouring from his broken jaw. 
 
@@ -300,24 +318,24 @@ Akimov crumbles to ground screaming in pain, blood pouring from his broken jaw.
 
 The voices fill your head with laughter. The energy gauge is increasing exponentially. A low rumbling fills the room.
 
-[[Sit back and watch]]</tw-passagedata><tw-passagedata pid="57" name="Sit back and watch" tags="" position="125,3309" size="100,100">A shockwave rocks the control room. Screams of operators fill your ears as the infrastructure outside crumbles to the ground. The steel door separating the control room from the rest of the facility bends in and out like paper in the wind.
+[[Sit back and watch]]</tw-passagedata><tw-passagedata pid="57" name="Sit back and watch" tags="" position="142,3649" size="100,100">A shockwave rocks the control room. Screams of operators fill your ears as the infrastructure outside crumbles to the ground. The steel door separating the control room from the rest of the facility bends in and out like paper in the wind.
 
 You laugh maniacally as the chaos swirls around you, and the voices bounce in your head with glee as the main lights go out. The room is bathed in red emergency battery-operated lights.
 
-[[Leave the room]] </tw-passagedata><tw-passagedata pid="58" name="Leave the room" tags="" position="125,3459" size="100,100">Your legs carry you over to the door as the sounds of explosions die down. As you turn the handle, your hand burns but you don&#39;t flinch. You only have one drive now, you must see what you&#39;ve done.
+[[Leave the room]] </tw-passagedata><tw-passagedata pid="58" name="Leave the room" tags="" position="142,3799" size="100,100">Your legs carry you over to the door as the sounds of explosions die down. As you turn the handle, your hand burns but you don&#39;t flinch. You only have one drive now, you must see what you&#39;ve done.
 
 Opening the door a gust of burning wind blows in your face, tanning your skin. 
 
 [[Keep moving]]
-</tw-passagedata><tw-passagedata pid="59" name="Keep moving" tags="" position="125,3609" size="100,100">You walk down the destroyed corridor. Charred bodies of maintenance workers litter the ground, some still alive and struggling to move in shock. Electricity arcs from detatched cables around you.
+</tw-passagedata><tw-passagedata pid="59" name="Keep moving" tags="" position="142,4039" size="100,100">You walk down the destroyed corridor. Charred bodies of maintenance workers litter the ground, some still alive and struggling to move in shock. Electricity arcs from detatched cables around you.
 
 Your skin starts peeling, but you must keep moving. You must see it.
 
-[[Onward]] </tw-passagedata><tw-passagedata pid="60" name="Onward" tags="" position="125,3759" size="100,100">You arrive at the reactor core - or where it used to be. The room has been completely blown out, debris and body parts strewn around the wreckage.
+[[Onward]] </tw-passagedata><tw-passagedata pid="60" name="Onward" tags="" position="142,4150" size="100,100">You arrive at the reactor core - or where it used to be. The room has been completely blown out, debris and body parts strewn around the wreckage.
 
 Inside you notice something shimmering.
 
-[[Take a closer look]]</tw-passagedata><tw-passagedata pid="61" name="Take a closer look" tags="" position="125,3909" size="100,100">As you make your way into the reactor room, your skin and muscles starts sloughing off. You&#39;re not surviving this, you know, but you need to see what has happened. You have no choice.
+[[Take a closer look]]</tw-passagedata><tw-passagedata pid="61" name="Take a closer look" tags="" position="142,4300" size="100,100">As you make your way into the reactor room, your skin and muscles starts sloughing off. You&#39;re not surviving this, you know, but you need to see what has happened. You have no choice.
 
 In your final moments, you collapse toward the ground and drag yourself closer to the mysterious shimmering object.
 
@@ -329,7 +347,28 @@ Dyatlov turns, eyes boring holes into you.
 
 &quot;How could you...&quot;
 
-Unfinished path</tw-passagedata></tw-storydata>
+[[Next-&gt;A ghost]]</tw-passagedata><tw-passagedata pid="63" name="&quot;It must be done.&quot;" tags="" position="252,3550" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="64" name="A ghost" tags="" position="858,4428" size="100,100">Akimov struggles to pull the door open, and as soon as it cracks a gust of hot wind blows through the room. Akimov is quickly tanned and burned by the draft, falling over squealing in pain.
+
+The entire room fills with fear and unease as their comrade writhes in agony on the floor. 
+
+An glowing figure of child size steps through the door, over Akimov, and slowly makes its way towards Dyatlov.
+
+[[What the...]]</tw-passagedata><tw-passagedata pid="65" name="What the..." tags="" position="858,4578" size="100,100">Horror and bewilderment fill Dyatlov&#39;s eyes.
+
+[[&quot;My boy..?&quot;]]</tw-passagedata><tw-passagedata pid="66" name="&quot;My boy..?&quot;" tags="" position="858,4728" size="100,100">The figure gazes down at Dyatlov, then reaches its hand out to him.
+
+Dyatlov raises his hand to touch its cheek.
+
+&quot;Pasha, I&#39;m so sorry, I&#39;m so sorry. I didn&#39;t know this would happen. Pasha, Pasha...&quot;
+
+[[Next-&gt;ghost 2]]</tw-passagedata><tw-passagedata pid="67" name="ghost 2" tags="" position="895,4872" size="100,100">As soon as Dyatlov&#39;s finger touches the cheek of the ethereal being, a light fills the room, burning your eyes. You quickly shield your vision, but your arm starts melting. Pain sears through your entire body as it breaks down in the tremondous energy waves.
+
+[[This is it...]]</tw-passagedata><tw-passagedata pid="68" name="This is it..." tags="" position="895,5022" size="100,100">The light dies suddenly, as had most of the men in the room. In your few last moments, you can see Akimov, your loyal friend, in a heap by the door, smoldering. You notice Dyatlov, your boss for the night, the reason for all of this, has completely disappeared, only a shadow of ash on the floor outlining where his body once was.
+
+You slump over, the light of the control room quickly fading from your perception. Your final thoughts are filled with regret.
+
+
+[[THE END-&gt;(goto-url: &quot;../Dark Premonitions.html&quot;)]]</tw-passagedata><tw-passagedata pid="69" name="(goto-url: &quot;../Dark Premonitions.html&quot;)" tags="" position="895,5172" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
