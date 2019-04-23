@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Underneath an Astral Autocracy" startnode="1" creator="Twine" creator-version="2.2.1" ifid="32E4B29F-5842-4F1B-8E32-AA170D6C4EB2" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
+<tw-storydata name="Underneath an Astral Autocracy" startnode="1" creator="Twine" creator-version="2.2.1" ifid="32E4B29F-5842-4F1B-8E32-AA170D6C4EB2" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
 	background-image: url(https://assets.htvapps.com/assets/images/weather/nt_clear_sm.92a5eb9.jpg)
 }
 
@@ -36,19 +36,7 @@ tw-sidebar{
 
 
 
-
-
-
-
-
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-
-
-
-
-
-
 
 
 
@@ -98,14 +86,12 @@ You hear a small beep come from your console and glance down, the tests you were
 			
 			Core: Unknown
 	*
-The information isn&#39;t entirely surprising to you as most planets that have been consumed by [insert Kronos star name] have had similar make ups, similar to Homeworld&#39;s.
+The information isn&#39;t entirely surprising to you as most planets you and your father have tested on your journey to this system have had unknown elements within them.
 [[Next|0.1]]</tw-passagedata><tw-passagedata pid="2" name="You" tags="" position="702,46" size="100,100">You are Harry Walker, a decorated astrophysicist and son to the father of interstellar travel, John Walker. You and your father were sent out to run tests on Kronos a yellow g-Type star similar to the sun. It has taken you almost two years of interstellar travel to reach your destination but the rewards will surely be worth it. If you find what you&#39;re looking for the scientific community must finally recognize you as more than &quot;John Walker&#39;s son&quot;.
-[[Return|Awakening]] </tw-passagedata><tw-passagedata pid="3" name="1.1" tags="" position="709,247" size="100,100">&quot;The planet is mostly made up of minerals similar to Homeworld&#39;s, which was to be expected. The increasing proximity between Kronos and KR-29B2 suggests that the planet will be consumed within the next two to three days, we won&#39;t have much time here before Kronos moves on to nearby planets,&quot; you say confidently. This is the first time in years that you&#39;re actually excited about doing work with John.
-
-[[John Responds]]</tw-passagedata><tw-passagedata pid="4" name="1.2" tags="" position="1131,251" size="100,100">(set: $Anger to $Anger + 1)
+[[Return|Awakening]] </tw-passagedata><tw-passagedata pid="3" name="1.1" tags="" position="709,247" size="100,100">&quot;The planet is mostly made up of minerals similar to Earth&#39;s, which was to be expected. The increasing proximity between Kronos and KR-29B2 suggests that the planet will be consumed within the next two to three days, we won&#39;t have much time here,&quot; you say confidently. This is the first time in years that you&#39;re actually excited about doing work with John.</tw-passagedata><tw-passagedata pid="4" name="1.2" tags="" position="1131,251" size="100,100">(set: $Anger to $Anger + 1)
 You ignore him and begin comparing the readings from the probe to the other planets in this star system.
 (link:&quot;...&quot;)
-[&quot;Are you listening to me?&quot; John asks as he walks up next to you, nudging you off of your terminal. &quot;I need to make sure you didn&#39;t miss anything, remember we only have three probes left to get the information we need, so I have no room to tolerate your mistakes.&quot; he trails off as his eyes begin to scan the screen in front of him.
+[&quot;Are you listening to me?&quot; John asks as he walks up next to you, nudging you off of your terminal. &quot;I need to make sure you didn&#39;t miss anything, remember we only have three probes left to get the information we need, so I have no room to tolerate your mistakes...&quot; he trails off as his eyes begin to scan the screen in front of him.
 
 [[Say Nothing]]
 [[Push him off your terminal]]]</tw-passagedata><tw-passagedata pid="5" name="Kronos" tags="" position="489,112" size="100,100">Kronos was discovered many, many years ago in the distant year of 2017. Scientists had hypothesized that it had consumed almost 15 earth-size planets during its 4 billion years of existence. You took a special interest in this planet as it reminded you of your father, consuming everything in its path until it was the only thing left. 
@@ -143,54 +129,193 @@ He stands at just over six feet tall with short, brown hair similar to yours. Hi
 
 
 [[Discuss the experiment with O.B.A.I]]</tw-passagedata><tw-passagedata pid="10" name="Krios" tags="" position="670,1429" size="100,100">Despite being Kronos&#39; twin, Krios does not have the same chemical makeup as its brother, in fact, Krios is a yellow G-type star like Sol. It&#39;s a problem you and your father have yet to understand.
-[[return| 6.1]]</tw-passagedata><tw-passagedata pid="11" name="0.1" tags="" position="896,174" size="100,100">(set: $Anger = 0)
+[[return| 6.1]]</tw-passagedata><tw-passagedata pid="11" name="9.1" tags="" position="1226,6939" size="100,100">Before you can continue talking, you hear a knock on your door, your father&#39;s voice carries from the other side, &quot;You better get to sleep soon son, you need to be fully alert tomorrow because if the tests fail, you will be to blame.&quot; You hear the door to his quarters open and close as you can only guess he is going to sleep.
+
+You tell Obai you should probably get ready for bed as tomorrow IS a very important day. He reluctantly agrees but before he signs off he asks you what you&#39;ll do about tomorrow.
+(set: $partner to &quot;empty&quot;)
+[[Attempt to do the experiment with Obai| 10.1]]
+[[Resign to working with your father| 10.2]]</tw-passagedata><tw-passagedata pid="12" name=" 10.1" tags="" position="1173,7343" size="100,100">(set: $partner to &quot;Obai&quot;)You tell Obai to be ready in the morning just in case. If you can get a hold of your father&#39;s keycard, or find another way into the lab, you&#39;ll do the experiment away from your father&#39;s judgemental eyes. For now though, you must [[wait until John is asleep.| 11.1 (Obai)]]</tw-passagedata><tw-passagedata pid="13" name=" 10.2" tags="" position="1522,7323" size="100,100">(set: $partner to &quot;John&quot;)You pause for a moment and think on the consequences that would occur if you left your father out of the experiment and the experiment failed. Just thinking about it makes your head hurt. 
+
+&quot;I&#39;m going to play it safe tomorrow and just try to complete my work to the best of my ability. I appreciate your help though.&quot;
+
+Obai hesitates for a moment, &quot;Well, the least you could do is keep me in the loop tomorrow, I want to know how things go.&quot;
+
+[[Go to sleep|12.1.2]]</tw-passagedata><tw-passagedata pid="14" name=" 11.1 (Obai)" tags="" position="899,6997" size="100,100">&quot;It&#39;ll be fun!&quot;, he says, &quot;Just imagine the payoff you&#39;ll get!&quot;
+
+[[Be apprehensive|11.1.1]]
+[[Be confident|11.1.2]]</tw-passagedata><tw-passagedata pid="15" name="11.1.1" tags="" position="755,7146" size="100,100">&quot;Keep your expectations low Obai,&quot; you say, &quot;for all I know I might not get into the lab tomorrow.&quot; 
+
+It sucks to say out loud but you know it&#39;s true, there&#39;s no guarentee that you get John&#39;s keycard and even if you do there&#39;s no guarentee that you and Obai can pull off the experiment. 
+
+[[Go to sleep|12.1.1]]</tw-passagedata><tw-passagedata pid="16" name="11.1.2" tags="" position="1063,7352" size="100,100">&quot;Yeah, it really would get my name out there huh?&quot; 
+
+You have to admit, finally getting recognition for your work would be a dream come true.
+
+[[Go to sleep|12.1.1]]</tw-passagedata><tw-passagedata pid="17" name="12.1.1" tags="" position="820,7277" size="100,100">You climb into bed and set a silent alarm for the middle of the night then begin to mentally prepare youself for the task ahead as you drift off to sleep. 
+[[Drift off| 13.1]]</tw-passagedata><tw-passagedata pid="18" name=" 13.1" tags="" position="1174,7473" size="100,100">You dream for the first time in what feels like years. 
+
+You open your eyes and are sitting in a classroom you remember from your childhood. [[Posters| Posters]] line the walls while a chalkboard sits at the front of the classroom with beautiful [[equations|14.1]]. </tw-passagedata><tw-passagedata pid="19" name=" Posters" tags="" position="1058,7628" size="100,100">The posters depict the most notable scientists throughout humanity&#39;s arguably short existence. Albert Einstein and Stephen Hawking were always your favorite scientists, they had a love for science that could not be matched by anyone you could possibly think of. In fact, they are the reasons you didn&#39;t give up on your studies in college.
+[[&lt; - | 13.1]]</tw-passagedata><tw-passagedata pid="20" name="14.1" tags="" position="1009,6965" size="100,100">Your father walks into the class room and begins drawing his design for his ground breaking [[antimatter rocket|Rocket Design]], the very invention that turned him into the &quot;father of interstellar travel&quot;. You can&#39;t help but twist your face in disgust as you watch him work.You see a ten year old version of yourself sneak up to the chalkboard and begin doodling in the corner. 
+You can&#39;t help but smile at your young, naive self before your father turns to them and begins shouting words you cannot hear but somehow understand. 
+
+[[Shout at your father to stop|15.1]]
+[[Do nothing|15.2]]</tw-passagedata><tw-passagedata pid="21" name="Rocket Design" tags="" position="1318,7631" size="100,100">The idea for the rocket was actually quite unoriginal, it had been around since almost 250 years prior in a very old sci-fi series. The concept was also pretty simple, in the 1928 scientists discovered the existence of antimatter and then later discovered that when antimatter comes into contact with normal matter they explode into pure radiation traveling out at the speed of light. There was one issue though, there was so little antimatter in the universe that this engine seemed impossible. 
+Your father begged to differ, he divised an engine that turned matter around it into antimatter and forcefully collided it with other existing matter around it, the engine was theoritically an infinite source of energy. 
+[[ - &gt; |14.1]]</tw-passagedata><tw-passagedata pid="22" name="15.1" tags="" position="865,7130" size="100,100">You begin to open your mouth to shout at your father but you are interupted by a deep, gravely voice that seems to be coming from all around you.
+*It&#39;s painful to watch isn&#39;t it?* the voice asks, *It&#39;s in a beings nature to want to be more than what their parents make them.*
+
+[[Ask the voice who they are|16.1]]
+[[Keep listening|16.2]]</tw-passagedata><tw-passagedata pid="23" name="15.2" tags="" position="1336,7027" size="100,100">A voice begins eminating from the wals of what feels like your own brain, deep and powerful it begins to speak. 
+*You&#39;ve watched your father take his obsession with scientific discovery and legacy go on for your entire life, to the point where it affected you. How long must you continue living in his shadow before you tell him it&#39;s enough?* 
+[[Answer the question|16.1]]
+[[Say Nothing|16.2]]</tw-passagedata><tw-passagedata pid="24" name="16.1(Obai)" tags="" position="713,7607" size="100,100">You wake up and glance out your viewport next to your terminal. Kronos has begun to peak out from behind the planet that was blocked it from your views just hours earlier. 
+(link: &quot;-&gt;&quot;)
+[You stand up and stretch slightly, doing your best to wake up as fast as possible without making too much noise. *Here goes nothing*, you think as you take your first steps [[out of your bedroom|17.1(Obai)]].]</tw-passagedata><tw-passagedata pid="25" name="16.1(John)" tags="" position="1221,7854" size="100,100">Harry wakes up to the sound of his father pounding on the door as they need to start the experiment as soon as possible. 
+The player is, once again, talked down to by John as they prepare for the experiment in the lab. 
+Harry hears the voice from his dream the night before, questioning why he works with his father and puts up with his emotional abuse. He then suggests that the player sabotages the experiment to get at John.
+[[Ruin the experiment|17.1(John)]]
+[[Ignore the voice|17.2(John)]]</tw-passagedata><tw-passagedata pid="26" name="16.1" tags="" position="690,7256" size="100,100">Before the sentence can fully form in your mind the voice cuts you off with what you think is a laugh.
+*You will get all the answers you have ever wanted soon enough, just keep your mind open to new possiblities.*
+As the voice fades away you can feel yourself being pulled away from your dream as you begin to feel your body wake up.
+(if: $partner is &quot;Obai&quot;)
+[[[Wake up|16.1(Obai)]]]
+(else:)
+[[[Wake up|16.1(John)]]]</tw-passagedata><tw-passagedata pid="27" name="16.2" tags="" position="1016,7222" size="100,100">*You will receive that which you desire most in due time.* the voice continues, *Time is not finished you yet.*
+You begin to feel yourself being pulled out of your dream, slowly returing to the waking world.
+(if: $partner is &quot;Obai&quot;)
+[[[Wake up|16.1(Obai)]]]
+(else:)
+[[[Wake up|16.1(John)]]]</tw-passagedata><tw-passagedata pid="28" name="12.1.2" tags="" position="1303,7279" size="100,100">You throw yourslef into bed, turn on the lamp next to your nightstand, and read up on your astrophysics before [[dozing off mid-read| 13.1]]. </tw-passagedata><tw-passagedata pid="29" name="17.1(Obai)" tags="" position="605,7658" size="100,100">Your door closes behind you with a slight whirr and hiss as it locks back into place behind you. 
+
+In front of you stands the doorway to your father&#39;s bedroom.
+
+[[Try to open the door|18.1(Obai)]]
+[[Get cold feet and go back to sleep|18.2(Obai)]]</tw-passagedata><tw-passagedata pid="30" name="18.1(Obai)" tags="" position="541,7777" size="100,100">You go to pull on the door, wrapping your hand around the handle and pulling with what you believe to be the proper amount of force and....it&#39;s locked. 
+
+[[Try the door again|20.1(Obai)]]
+[[Try to think of another solution|19.1(Obai)]]
+[[Give up and go to be, you tried your best|18.2(Obai)]]</tw-passagedata><tw-passagedata pid="31" name="18.2(Obai)" tags="" position="904,7711" size="100,100">You stand staring at the door to your father&#39;s bedroom for what feels like hours before you decide that this probably isn&#39;t the right choice for your career path. You take a deep breath, turn around, and go back into your room to sleep [[until the morning.|16.1(John)]]</tw-passagedata><tw-passagedata pid="32" name="19.1(Obai)" tags="" position="761,7864" size="100,100">You take a moment to think of how else you could possibly break into the lab without your father&#39;s keycard.
+(set: $num to 0)
+(Link:&quot;Maybe a crowbar from the engine room?&quot;)[(set: $num to $num + 1)*No that would wake up John for sure*.]
+
+(Link:&quot;Maybe there&#39;s something in the cockpit I could use to hack the keypad?&quot;)[(set: $num to $num + 1)*Not that...John designed just about everything on this ship, you might hate your father but he is as smart as everyone says he is.*]
+
+(Link:&quot;Give the door another pull.&quot;)[You think for a moment and decide you might as well try the door one more time before you give up, what if you didn&#39;t [[pull hard enough|20.1(Obai)]]?]</tw-passagedata><tw-passagedata pid="33" name="20.1(Obai)" tags="" position="460,8013" size="100,100">You place your hand on the door once more and it begins to open slightly. With as much care as possible you ease the door open as the sound of John snoring drifts towards you.
+
+The door clicks softly as you push it all the way open.
+
+(Link:&quot;Wait a moment to make sure he doesn&#39;t wake up.&quot;)[You take a moment, staring intently at your father&#39;s sleeing body, rising rhythmically with his breaths. He doesn&#39;t appear to have awoken.]
+
+[[Look for his keycard|21.1(Obai)]]</tw-passagedata><tw-passagedata pid="34" name="21.1(Obai)" tags="" position="649,8456" size="100,100">You glance around the room quickly, hoping to find the keycard before there is any chance John is roused from his sleep. 
+
+(Link:&quot;Check his nightstand&quot;)[You tip toe your way to his night stand. It&#39;s covered in physics disertations and printed out research studies completed by his rivals in the scientific community, but no keycard.]
+
+(Link:&quot;Check his dresser&quot;)[You walk to the foot of his bed where the small dresser sits. Unlike your dresser which has your clothes spilling out of it like a bomb went off, John&#39;s is neat. A couple of magazines sit on top of the dresser, most notably the issue of Time magazine where he was voted &quot;Person of the Year&quot;. Still no keycard.]
+
+(Link:&quot;Check his desk&quot;)[You turn towards his desk, being careful not to activate his computer terminal while you search. You brush aside more papers filled with complex math equations and sketches of new inventions that he could create to further his legacy. Still no keycard.]
+
+[[Give up|22.1(Obai)]]</tw-passagedata><tw-passagedata pid="35" name="22.1(Obai)" tags="" position="357,8252" size="100,100">After believing you have thoroughly searched the room you resign yourself to the reality that his keycard is probably on his person. You turn to leave as a reflection of light catches your eye from the floor. 
+
+(Link:&quot;Inspect the item.&quot;)[You bend down to see what caught your eye and discover John&#39;s keycard laying in the middle of his bedroom floor. A mistake like this is uncharacteristic of your father, but you can recognize a win when you see one. You grab the keycard and walk out of the bedroom making sure to close the door as quietly as possible. [[Go to the lab|23.1(Obai)]]]</tw-passagedata><tw-passagedata pid="36" name="23.1(Obai)" tags="" position="779,8473" size="100,100">You turn right down the hallway and begin walking towards the lab. 
+
+(Link:&quot;Think about your dream from last night.&quot;)[You take a moment to reflect on the dream you had last night, and the voice that paid you a visit. It was unlike any voice you had heard before and it rang through your head like a church bell. You&#39;re not sure what it meant, but it&#39;s probably nothing.]
+
+(Link:&quot;Go over the experiment one more time.&quot;)[As you near the lab door you can&#39;t help but smile at the groudbreaking work you&#39;ll be doing. You will be shooting multiple probes into different areas of Kronos, to gather as much information on its chemical and mineral makeup. The probes will be sending data streams back to the ship constantly for almost five hours and it is up to you to sort through all data, determine what is important and what is not and record it.]
+
+[[Enter the lab|24.1(Obai)]]</tw-passagedata><tw-passagedata pid="37" name="24.1(Obai)" tags="" position="694,8651" size="100,100">You walk up to the laboratory door and swipe both keycards, the scanner beeps and the door slides open. 
+
+The lights flicker on as you walk in revealing a small room with a gorgeous view. The far wall is clear, revealing the beautiful backdrop of space behind it. Your terminal lies in the back left of the room, your father&#39;s in the back right. Various lab machines for tests you and your father were conducting during your trip lie around the room. You turn around and lock the door before turning back to the room.
+
+(Link:&quot;Look out the viewport&quot;)[You walk to the back of the room and look out at the landscape in front of you. The planet that was originally blocking Kronos from view is now blocked by the bright shine of the distant star. You spot off in the distance the light of Krios shining dimly behind its twin.]
+
+(Link:&quot;Go to your terminal&quot;)[You walk to the back left of the lab, past the various machines and the viewport to the expanse of space before you. You boot up your terminal, you should [[call Obai|25.1(Obai)]] as soon as possible to get everything prepped for the experiment.]</tw-passagedata><tw-passagedata pid="38" name="25.1(Obai)" tags="" position="454,8636" size="100,100">You scroll through your short contact list and call Obai, it rings briefly before you hear his heavy breathing on the other end.
+
+&quot;Are you ready to make history?&quot; you ask, &quot;Kronos is almost in position and John will be awake soon so I&#39;ll have to worry about that too.&quot;
+
+You hear Obai grumble for a moment, clearly still rousing himself from his sleep, &quot;Yeah so I sent you over a program I wrote that should let me connect with the ships network, from there I can process any information from the probes you allow me to see.&quot;
+
+[[Tell him you&#39;re excited|26.1(Obai)]]
+
+[[Tell Obai you trust him|28.1(Obai)]]</tw-passagedata><tw-passagedata pid="39" name="26.1(Obai)" tags="" position="441,8988" size="100,100">&quot;I&#39;m excited too!&quot; he says, &quot;Actually, I&#39;ve been thinking, if we manage to pull this off will I get some of the credit?&quot;
+
+[[&quot;Of course you will!&quot;|27.1(Obai)]]
+
+[[&quot;The research is being done by me.....&quot;|27.2(Obai)]]</tw-passagedata><tw-passagedata pid="40" name="27.1(Obai)" tags="" position="508,9213" size="100,100">Obai laughs nervously, &quot;I was worried you would say no, I know how important this is to you though.&quot; 
+
+(Link:&quot;Prep Obai on the prodedure&quot;)[You spend the next hour going over what you need Obai to do during the experiment before you hear a [[knock on the lab door.|28.1(Obai)]]]</tw-passagedata><tw-passagedata pid="41" name="27.2(Obai)" tags="" position="492,9007" size="100,100">You trail off and silence hangs heavy for a moment before Obai responds, &quot;No, I get it, it&#39;s okay. You might get in trouble with the Planetary Alliance if they found out anyways.&quot;
+
+(Link:&quot;Change the subject&quot;)[You awkwardly change the subject, mentioning something about space and stars and how much you love them. Then you begin going over what you expect of Obai during the experiment for the next hour before a [[knock at the lab door interupts you.|28.1(Obai)]]]</tw-passagedata><tw-passagedata pid="42" name="28.1(Obai)" tags="" position="622,9376" size="100,100">You decide to begin the experiment after exploring the lab briefly. Under the looming &quot;gaze&quot; of Kronos peeking out from behind the nearby planet you prep and fire the first round of probes into the star. Date begins coming in and things are going smoothly until John begins pounding on the lab door, demanding to be let in. 
+The player can:
+[[Ignore him|29.1(Obai)]]
+[[Go to the door|29.2(Obai)]]</tw-passagedata><tw-passagedata pid="43" name="17.1(John)" tags="" position="1111,7854" size="100,100">Harry agrees, if John won&#39;t let him have any of the credit from the experiment than why should he get any credit either. Harry can attempt to talk with the voice and finds out that the voice is actually coming from the supposed star, Kronos. 
+John attempts to stop the player (Harry) and they can do one of two things:
+[[Fight back|18.1(John)]]
+[[Stop sabotaging|18.2(John)]]</tw-passagedata><tw-passagedata pid="44" name="17.2(John)" tags="" position="1460,7864" size="100,100">Harry ignores the voice and continues working with John on acquiring as much info as possible. Kronos gets angry, the probes are hurting them and he continues to bombard your mind with pleads to stop. Eventually he stops pleading and begins to bargain with you, he offers to help you get out from your father&#39;s shadow if you help him find more planets to consume. 
+[[Take his offer|19.1(John)]]
+[[Keep working|19.2(John)]]</tw-passagedata><tw-passagedata pid="45" name="18.1(John)" tags="" position="1008,7937" size="100,100">John and Harry argue to the point of physical violence, Harry(the player) continues to push to ruin the experiment. John gets knocked out during the altercation and Harry continues to destroy the data. Kronos offers the player a reward if he helps them find more planets to destroy. 
+[[Accept the reward|19.1(John)]]
+[[Refuse the reward|19.2(John)]]</tw-passagedata><tw-passagedata pid="46" name="18.2(John)" tags="" position="1276,7984" size="100,100">Harry takes a moment and clears his head, John and Harry agree to salavage any work that was missed. Kronos finally stops trying to keep you from conducting your research and instead begins threatening Earth itself. John is unphased by this and keeps working, but Kronos offers you an opportunity to overcome John if you help him find a new place to destroy more planets. [[Help Kronos|19.1(John)]] 
+[[Refuse|19.2(John)]]</tw-passagedata><tw-passagedata pid="47" name="29.1(Obai)" tags="" position="333,9302" size="100,100">Harry continues the experiment, not paying attention to his father. The banging stops and John begins to bargain with Harry before the voice from Harry&#39;s dream begins talking to him saying he should stop the experiment and ruin John&#39;s legacy. 
+Regardless of what the player decides, John will eventually break into the lab to confront Harry. First they argue, then John tries to take over part of th eexperiment, then a physical altercation ensues as the voice continues to push Harry on. 
+As the fight reaches a fever pitch and Harry is about to gravely hurt John, Obai interupts and says that Kronos isn&#39;t a star, it&#39;s alive in some way and appears to consume energy collected from devoured planets. John passes out. 
+The voice, now revealed to be Kronos, defends its actions claiming life moves in cycles. With this new information Harry and Obai begin arguing on what they should do before Obai, who is still looking over data, suggests that modifying one of the probes in a certain way could essentially stun the being long enough for them to leave without it following them. It would destroy most of the information that you gathered though, leaving the mission as a failure. 
+[[Keep working|30.1(Obai)]]
+[[Sacrifice the data|31.1(Obai)]]</tw-passagedata><tw-passagedata pid="48" name="29.2(Obai)" tags="" position="666,9506" size="100,100">You go to the door and talk with John, you ssay that you&#39;re doing the experiment with the help of your friend and he will get none of the credit. In a fit of anger John manages to break into the lab where he confronts Harry about what he&#39;s doing, reasoning turns to arguing turns to physical altercations. 
+As the fight reaches a fever pitch and Harry is about to gravely hurt John, Obai interupts and says that Kronos isn&#39;t a star, it&#39;s alive in some way and appears to consume energy collected from devoured planets. 
+The voice, now revealed to be Kronos, defends its actions claiming life moves in cycles. With this new information Harry, Obai, and John begin arguing on what they should do before Obai, who is still looking over data, suggests that modifying one of the probes in a certain way could essentially stun the being long enough for them to leave without it following them. It would destroy most of the information that you gathered though, leaving the mission as a failure. John wants to keep going, saying he can stop the being with the data that is being collected. 
+[[Keep working|30.1(Obai)]]
+[[Stop John and sacrifice the data|31.1(Obai)]]</tw-passagedata><tw-passagedata pid="49" name="30.1(Obai)" tags="" position="445,9472" size="100,100">Harry decides that the risk is worth it and decides he can stop this being as long as he gets the information. 
+Kronos is silent for some time, then a shockwave eminates from the nearby star, he enters your mind and says that the probes you are using apparently hurt his physical form. He tells you to stop or consequences will ensue.
+[[Stop working|31.1(Obai)]]
+[[Keep going|31.2(Obai)]]</tw-passagedata><tw-passagedata pid="50" name="31.1(Obai)" tags="" position="275,9626" size="100,100">You decide that the lives within the Planetary Alliance are worth more than your research and you begin modifying a probe to &quot;stun&quot; Kronos and then prepare a hyper jump back to Earth.
+John is taken over, mentally, by Kronos and begins attacking you furiously. It takes everything within your power to stop him but you manage to launch the probe, stun him, and escape back to earth. John dies in the altercation and you place the failure of the experiment on him, absolving yourself of any potential career ending accusations.  </tw-passagedata><tw-passagedata pid="51" name="31.2(Obai)" tags="" position="584,9656" size="100,100">You decide to keep working and Kronos continues to be angered by the probes being shot at it. He offers you an option to surpass your father if you help him find more planets to feed on. If you agree he opens a portal to the past in a hectic Chernobyl. If you reject his offer, you return to Earth two years later with your research to find Earth already consumed by Kronos and the remains of the Human race have labeled you and your father an enemy to humanity. </tw-passagedata><tw-passagedata pid="52" name="19.2(John)" tags="" position="1430,8144" size="100,100">The player refuses and the father-son duo continue to work. They finish gathering data as Kronos vows to destroy Earth. By the time Harry and John get back to Earth it is already destroyed and they find a transmition labeling them as traitors to humanity.</tw-passagedata><tw-passagedata pid="53" name="19.1(John)" tags="" position="1206,8134" size="100,100">The player accepts his offer and is shown a portal to what appears to be the past, they willingly walk through eager to finally be out from under John&#39;s shadow.</tw-passagedata><tw-passagedata pid="54" name="0.1" tags="" position="896,174" size="100,100">(set: $Anger = 0)
 &quot;Anything of note from the probe reading?&quot; you hear your father call from the other side of the lab
 Your father, [[John Walker|John Walker]], approaches you outside of your vision, &quot;Son? I asked you a question,&quot; he says sternly. He&#39;s never treated you as an equal, even though you have a phd in Astrophysics just like him. 
 [[Tell him your findings|1.1]]
-[[Say nothing|1.2]]</tw-passagedata><tw-passagedata pid="12" name="Push him off your terminal" tags="" position="1583,381" size="100,100">After a minute of him reading over the data you get fed up with him blocking your terminal and step up next to him, nudging him over slightly so you can look at the data together. &quot;John, come on, I need to finish writing up my report,&quot; you say as calmly as you can. 
+[[Say nothing|1.2]]</tw-passagedata><tw-passagedata pid="55" name="Push him off your terminal" tags="" position="1346,404" size="100,100">After a minute of him reading over the data you get fed up with him blocking your terminal and step up next to him, nudging him over slightly so you can look at the data together. &quot;John, come on, I need to finish writing up my report,&quot; you say as calmly as you can. 
 
 (link:&quot;...&quot;)
 
-[&quot;Harry, I need to look over your work first, if you make any mistakes not only does it come back to me, it could effect Homeworld too. I will NOT let that happen,&quot; John finishes his sentence and continues looking over the data. 
+[&quot;Harry, I need to look over your work first, if you make any mistakes it comes back to me. I will NOT let that happen,&quot; John finsihes his sentence and continues looking over the data. 
 
 [[Push the Issue]]
 [[Go use John&#39;s Terminal]]
 ]
-(set: $Anger to $Anger + 1)</tw-passagedata><tw-passagedata pid="13" name="Push the Issue" tags="" position="1749,486" size="100,100">&quot;Look it&#39;s my work,&quot; you say with half hearted confidence. 
+(set: $Anger to $Anger + 1)</tw-passagedata><tw-passagedata pid="56" name="Push the Issue" tags="" position="1512,509" size="100,100">&quot;Look it&#39;s my work,&quot; you say with half hearted confidence. 
 
 John chuckles slightly and looks at you, &quot;What are you going to do? Son, don&#39;t forget that I am the reason you are even here, all of your hard work and efforts would mean nothing without me, which is exactly why I will be the sole author of the paper we write on our findings.&quot; 
 
 (link:&quot;...&quot;)[&quot;What?&quot; your half hearted confidence has turned to confusion as you suddenly realize all of your work will be credited to John, rendering this trip a waste of four years of your life.
 
 [[Threaten John]]
-[[Admit defeat]]]</tw-passagedata><tw-passagedata pid="14" name="Go use John&#39;s Terminal" tags="" position="1509,570" size="100,100">You move to go use John&#39;s workstation, but he puts his arm in front of you, blocking your path. &quot;What do you think you&#39;re doing? I need you to stay over here, learn from what I&#39;m doing. If you prove you&#39;ve learned something I might eventually start adding you as a co-author to our findings.&quot;
+[[Admit defeat]]]</tw-passagedata><tw-passagedata pid="57" name="Go use John&#39;s Terminal" tags="" position="1272,593" size="100,100">You move to go use John&#39;s workstation, but he puts his arm in front of you, blocking your path. &quot;What do you think you&#39;re doing? I need you to stay over here, learn from what I&#39;m doing. If you prove you&#39;ve learned something I might eventually start adding you as a co-author to our findings.&quot;
 
 (link:&quot;...&quot;)
 [Hearing this you turn around and get close to John&#39;s face, &quot;What do you mean &#39;eventually&#39;? I should be co-author on those papers, we&#39;re conducting this work TOGETHER.&quot; He doesn&#39;t seem to be phased by your reaction, instead turning back to the terminal to continue reading before jotting down one final note and turning to leave. 
 
 &quot;My decision is final Harry, accept it or I will force you to stay in your room til the experiments are conducted tomorow,&quot; as he finishes his sentence the lab door opens and closes behind him with a hiss and thud, leaving you in the silence of the lab.
 
-[[Continue Working]]]</tw-passagedata><tw-passagedata pid="15" name="Say Nothing" tags="" position="1239,445" size="100,100">You awkwardly stand behind John for a couple of minutes as his eyes dart from the probe readings to his own personal notes where he writes something down, then goes back to scanning the readings. After writing a couple of scibbles on his mobile terminal he nods and goes back to his workstation on the other side of the lab. 
+[[Continue Working]]]</tw-passagedata><tw-passagedata pid="58" name="Say Nothing" tags="" position="1002,468" size="100,100">You awkwardly stand behind John for a couple of minutes as his eyes dart from the probe readings to his own personal notes where he writes something down, then goes back to scanning the readings. After writing a couple of scibbles on his mobile terminal he nods and goes back to his workstation on the other side of the lab. 
 
 (link: &quot;Call after him&quot;)
 [&quot;See anything interesting?&quot; you ask, this has been the usual behavior from John whenever you received new information. He always had to make sure your work was mistake free despite you making less mistakes than him on this trip.
 
-He pauses for a moment, halfway to his workstation, &quot;You would not understand it even if I explained it slowly to you, gravitational physics has never been your strong suit. Leave it to the best. By the way, I&#39;ve thought about your request and no, you will not be a co-author on our findings here, your name would end up first on the work because of our names, I cannot allow that. You will be noted in the appendix as a resource, nothing more. And when I&#39;m hailed as the savior of humanity, I&#39;ll allow you to say you were my assistant.&quot; As he finishes speaking he continues over to his desk, grabs his various papers, notebooks, and research and starts towards the lab exit. 
+He pauses for a moment, halfway to his workstation, &quot;You would not understand it even if I explained it slowly to you, gravitational physics has never been your strong suit. Leave it to the best. By the way, I&#39;ve thought about your request and no, you will not be a co-author on our findings here, your name would end up first on the work because of our names, I cannot allow that. You will be noted in the appendix as a resource, nothing more.&quot; As he finishes speaking he continues over to his desk, grabs his various papers, notebooks, and research and starts towards the lab exit. 
 
 [[Stop him]]
-[[Let him go]]] </tw-passagedata><tw-passagedata pid="16" name="Stop him" tags="" position="1058,854" size="100,100">&quot;Are you serious?&quot; you shout across the lab, &quot;Our main purpose for being out here isn&#39;t for recognition...&quot;
+[[Let him go]]] </tw-passagedata><tw-passagedata pid="59" name="Stop him" tags="" position="885,674" size="100,100">&quot;Are you serious?&quot; you shout across the lab, &quot;I&#39;ve put my blood, sweat, and tears into this work and I should be recognized for it just as much as you.&quot;
 
 John keeps walking towards the door, seemingly not listening to your pleas, swipes his ID and walks out the door as it hisses shut behind him, locking into place with a soft thud. 
 
 (set: $Anger to $Anger + 1)
-[[Continue Working]]</tw-passagedata><tw-passagedata pid="17" name="Let him go" tags="" position="1272,818" size="100,100">John walks up to the lab door, swipes his ID, and leaves as the door hisses shut behind him, thudding as it locks behind him. 
+[[Continue Working]]</tw-passagedata><tw-passagedata pid="60" name="Let him go" tags="" position="1109,671" size="100,100">John walks up to the lab door, swipes his ID, and leaves as the door hisses shut behind him, thudding as it locks behind him. 
 
-[[Continue Working]] </tw-passagedata><tw-passagedata pid="18" name="Continue Working" tags="" position="1018,1089" size="100,100">You take a deep breath to gather yourself and think about the weight of what just happened. 
+[[Continue Working]] </tw-passagedata><tw-passagedata pid="61" name="Continue Working" tags="" position="1018,1089" size="100,100">You take a deep breath to gather yourself and think about the weight of what just happened. 
 (link:&quot;...&quot;)
 [You hear a ping from your terminal and glance down, your notes are open and you see the paper you and John have been writing. 
 
 *
-A Study of Kronos and Its Predicted Effects on Homeworld
+A Study of Circumbinary Planets and the Unique Effect it has on Planets
 
 By Dr. H. Walker and Dr. J. Walker
 
@@ -201,26 +326,26 @@ You take a moment to read the title before
 
 You shake your head, clearly your talk with John got inside your head, and not in a good way. You think it&#39;d probably be in your best interest to go work in your room, hopefully your brain won&#39;t have any more mistakes. 
 
-[[Go to your quarters]]]</tw-passagedata><tw-passagedata pid="19" name="Threaten John" tags="" position="1644,676" size="100,100">&quot;I&#39;ll go to the board of directors in the science division, I&#39;ll tell them how you&#39;re stealing my work and passing it off as your own,&quot; you stammer out with the confidence a socially anxious student giving a presentation. &quot;All of my work will have been for nothing, I&#39;ll have wasted four years of my life.&quot;
+[[Go to your quarters]]]</tw-passagedata><tw-passagedata pid="62" name="Threaten John" tags="" position="1407,699" size="100,100">&quot;I&#39;ll go to the board of directors in the science division of the Planetary Alliance, I&#39;ll tell them how you&#39;re stealing my work and passing it off as your own,&quot; you stammer out with the confidence a socially anxious student giving a presentation. &quot;All of my work will have been for nothing, I&#39;ll have basically wasted four years of my life.&quot;
 
 (link:&quot;...&quot;)[John shrugs, &quot;Your work will have been for the benefit of the Walker legacy, if you can&#39;t see the importance of your family name over your own then I don&#39;t think you&#39;ll ever be fit to continue my work when I die. Now I&#39;m going to continue my work away from your distractions, I expect a full write up on that planet before we begin tomorrow morning.&quot;
 
 John gathers his things and leaves the lab, the door hissing slightly then thudding as it locks behind him. You are left alone in the lab.
 
-[[Continue Working]]]</tw-passagedata><tw-passagedata pid="20" name="Admit defeat" tags="" position="1815,706" size="100,100">You nod sullenly, there&#39;s nothing you can do to stop him, he has more power within the Planetary Alliance than most politicians do, going against him could end your career. &quot;Okay, fine. I need to finish my preparations for tomorrow, can I have some peace and quiet to do so dad?&quot; you force out the last word, &#39;dad&#39;, you&#39;ve always had trouble calling anything but his first name.
+[[Continue Working]]]</tw-passagedata><tw-passagedata pid="63" name="Admit defeat" tags="" position="1578,729" size="100,100">You nod sullenly, there&#39;s nothing you can do to stop him, he has more power within the Planetary Alliance than most politicians do, going against him could end your career. &quot;Okay, fine. I need to finish my preparations for tomorrow, can I have some peace and quiet to do so dad?&quot; you force out the last word, &#39;dad&#39;, you&#39;ve always had trouble calling anything but his first name.
 
 John thinks for a moment, then nods, &quot;Okay, I&#39;ll give you some time to work, but I will be checking in on it before I go to sleep in case I have to fix your mistakes.&quot;
 
 John leaves the lab as the door hisses shut and locks behind him. 
 
-[[Continue Working]] </tw-passagedata><tw-passagedata pid="21" name="Go to your quarters" tags="" position="1001,1201" size="100,100">You walk out of the lab and down the hallway that goes across the entirety of the ship, past the latrine and the engineering deck lie you and your father&#39;s rooms. Your name is on the door on the right of the craft &quot;H. Walker&quot;, you&#39;ve hated that last name for as long as you can remember, but you&#39;re determined to make it your own eventually. 
+[[Continue Working]] </tw-passagedata><tw-passagedata pid="64" name="Go to your quarters" tags="" position="1003,1241" size="100,100">You walk out of the lab and down the hallway that goes across the entirety of the ship, past the latrine and the engineering deck lie you and your father&#39;s rooms. Your name is on the door on the right of the craft &quot;H. Walker&quot;, you&#39;ve hated that last name for as long as you can remember, but you&#39;re determined to make it your own eventually. 
 You rub your temples after yet another long day of work and step into your room to think over what John just told you.
-[[Enter your room|5.1]]</tw-passagedata><tw-passagedata pid="22" name="Listen to O.B.A.I" tags="" position="843,1616" size="100,100">&quot;Go ahead O.B.A.I tell me what you&#39;ve got,&quot; O.B.A.I doesn&#39;t actively tell you information that often, usually it waits for orders.
+[[Enter your room|5.1]]</tw-passagedata><tw-passagedata pid="65" name="Listen to O.B.A.I" tags="" position="843,1616" size="100,100">&quot;Go ahead O.B.A.I tell me what you&#39;ve got,&quot; O.B.A.I doesn&#39;t actively tell you information that often, usually it waits for orders.
 
-&quot;I studied the outputs from probe P-09B287 and discovered an interesting development once you left the lab. The oncoming star is approaching at a faster rate than expected and has already begun consuming part of the planet, by tomorrow afternoon it will have moved out of range of our probes.&quot;
+&quot;I studied the outputs from probe P-09B287 and discovered an interesting development once you left the lab. The values were fluctuating at a rate I was unfamiliar with, most notably the metal ores appeared to be disappearing from the readings. An outcome most perplexing, should I notify Dr. J. Walker?&quot;
 
 [[Tell O.B.A.I to notify John]]
-[[Tell O.B.A.I not to notify John]]</tw-passagedata><tw-passagedata pid="23" name="Tell O.B.A.I to notify John" tags="" position="893,1813" size="100,100">&quot;Notify him that there is information he will need to go over before we begin tomorrow morning, high priority,&quot; you hate admitting that John should be the one to analyze the new findings but admit that he is probably better suited to this odd occurance than you.
+[[Tell O.B.A.I not to notify John]]</tw-passagedata><tw-passagedata pid="66" name="Tell O.B.A.I to notify John" tags="" position="893,1813" size="100,100">&quot;Notify him that there is information he will need to go over before we begin tomorrow morning, high priority,&quot; you hate admitting that John should be the one to analyze the new findings but admit that he is probably better suited to this odd occurance than you.
 
 (link:&quot;Go to sleep&quot;)
 [You decide that it&#39;s probably time to try to get some rest, tomorrow is an important day after all. As you lay your head against the pillow you glance back at your terminal, &quot;Goodnight O.B.A.I, make sure to wake me up two hours before the experiment starts, I need to go over some things.&quot;
@@ -231,7 +356,7 @@ O.B.A.I beeps and responds, (text-style: &quot;shudder&quot;)[(link:&quot;*I wil
 
 
 (set: $notify to 1)
-(set: $Anger to $Anger - 1)</tw-passagedata><tw-passagedata pid="24" name="Tell O.B.A.I not to notify John" tags="" position="1125,1819" size="100,100">&quot;You know what O.B.A.I, don&#39;t bother him, I&#39;ll take a look at it before we start tomorrow. Do you mind waking me up earlier than I originally planned?&quot;
+(set: $Anger to $Anger - 1)</tw-passagedata><tw-passagedata pid="67" name="Tell O.B.A.I not to notify John" tags="" position="1125,1819" size="100,100">&quot;You know what O.B.A.I, don&#39;t bother him, I&#39;ll take a look at it before we start tomorrow. Do you mind waking me up earlier than I originally planned?&quot;
 
 (link:&quot;...&quot;)
 [O.B.A.I beeps, (text-style: &quot;shudder&quot;)[(link:&quot;*I will wake you upon the rise of the stars above*&quot;)[(show:?cloaked)]]]|cloaked)[&quot;Yes Dr. Walker, have a good night&quot; 
@@ -240,21 +365,21 @@ O.B.A.I beeps and responds, (text-style: &quot;shudder&quot;)[(link:&quot;*I wil
 
 
 (set: $notify to 0)
-(set: $Anger to $Anger + 1)</tw-passagedata><tw-passagedata pid="25" name="Go to sleep" tags="" position="994,2144" size="100,100">Sleep grips you in a way you haven&#39;t experienced since embarking on this interstellar trip. You have dreams of your young life, stuck in your room studying while other children played outside, your father constantly testing you, making sure you can carry on his work. Not for you, but for the &quot;Walker name&quot;. That mindset followed you through your dreams, the Walker name, the Walker name, the Walker name, it is seemingly endless until the soft beeps of O.B.A.I wakes you up.
+(set: $Anger to $Anger + 1)</tw-passagedata><tw-passagedata pid="68" name="Go to sleep" tags="" position="994,2144" size="100,100">Sleep grips you in a way you haven&#39;t experienced since embarking on this interstellar trip. You have dreams of your young life, stuck in your room studying while other children played outside, your father constantly testing you, making sure you can carry on his work. Not for you, but for the &quot;Walker name&quot;. That mindset followed you through your dreams, the Walker name, the Walker name, the Walker name, it is seemingly endless until the soft beeps of O.B.A.I wakes you up. 
 
-(link: &quot;Wake Up&quot;)[Your eyes open slowly to O.B.A.I&#39;s soft beeps, &quot;Wake up Dr. H. Walker, it&#39;s time for your experiment. Your father is waiting for you in the lab already.&quot; 
-
-[[Go to the Lab]]]</tw-passagedata><tw-passagedata pid="26" name="What?" tags="" position="992,1978" size="100,100">&quot;O.B.A.I what on homeworld was that?&quot; you&#39;ve never heard O.B.A.I talk like that, ever. 
+[[Wake up]]</tw-passagedata><tw-passagedata pid="69" name="What?" tags="" position="992,1978" size="100,100">&quot;O.B.A.I what on homeworld was that?&quot; you&#39;ve never heard O.B.A.I talk like that, ever. 
 
 &quot;What do you mean Dr. Walker? Did I say something wrong?&quot;
 
 You wait for a moment and then pass the incident off as a slip of the mind and go to sleep.
 
-[[Go to sleep]] </tw-passagedata><tw-passagedata pid="27" name="Discuss the experiment with O.B.A.I" tags="" position="1196,1626" size="100,100">&quot;O.B.A.I, do you have any comments you want to make regarding the experiment tomorrow? I could use your input on the probe readings from today.&quot;
-O.B.A.I beeps in response to your request, &quot;I studied the outputs from probe P-09B287 and discovered an interesting development once you left the lab. The oncoming star is approaching at a faster rate than expected and has already begun consuming part of the planet, it will be out of range of our probes by the end of tomorrow.&quot;
+[[Go to sleep]] </tw-passagedata><tw-passagedata pid="70" name="Discuss the experiment with O.B.A.I" tags="" position="1193,1627" size="100,100">&quot;O.B.A.I, do you have any comments you want to make regarding the experiment tomorrow? I could use your input on the probe readings from today.&quot;
+O.B.A.I beeps in response to your request, &quot;I studied the outputs from probe P-09B287 and discovered an interesting development once you left the lab. The values were fluctuating at a rate I was unfamiliar with, most notably the metal ores appeared to be disappearing from the readings. An outcome most perplexing, should I notify Dr. J. Walker?&quot;
 
 [[Tell O.B.A.I to notify John]]
-[[Tell O.B.A.I not to notify John]]</tw-passagedata><tw-passagedata pid="28" name="Go to the Lab" tags="" position="977,2376" size="100,100">(set: $Probes to 3)
+[[Tell O.B.A.I not to notify John]]</tw-passagedata><tw-passagedata pid="71" name="Wake up" tags="" position="995,2293" size="100,100">Your eyes open slowly to O.B.A.I&#39;s soft beeps, &quot;Wake up Dr. H. Walker, it&#39;s time for your experiment. Your father is waiting for you in the lab already.&quot; 
+
+[[Go to the Lab]]</tw-passagedata><tw-passagedata pid="72" name="Go to the Lab" tags="" position="999,2445" size="100,100">(set: $Probes to 3)
 (set: $Data to 0)
 You walk into the lab to see John already hard at work, rushing around the lab glancing out readouts, back at his notes, and then moving on to the next machine. You walk through the lab, dodging him as he frantically goes through his pattern. You arrive at your terminal to find notes sketched in almost unreadable handwriting, you pick one up and examine it. *Kill the beings?* it reads, you&#39;re not exactly sure what is happening before John rushes up to you, a frantic look in his eye, &quot;It&#39;s amazing!&quot; he says before a beep from a terminal distracts him and he runs to inspect it. 
 
@@ -265,21 +390,21 @@ O.B.A.I beeps, &quot;I&#39;m not sure Dr. H. Walker, after I discussed  the info
 [(link:&quot;You told him anyways?&quot;)[(text-colour: green)[I&#39;m sorry Dr. Walker, he discoverd the anomoly himself and asked me to assist him, I have no choice but to assist.]]]
 
 [[Talk to John]]]
-</tw-passagedata><tw-passagedata pid="29" name="Talk to John" tags="" position="959,2552" size="100,100">You do your best to step in front of John as he rushes around, eventually catching a fistful of his uniform and put on your sternest voice, &quot;John, what&#39;s going on we need to prepare for the experiment.&quot; 
+</tw-passagedata><tw-passagedata pid="73" name="Talk to John" tags="" position="1006,2606" size="100,100">You do your best to step in front of John as he rushes around, eventually catching a fistful of his uniform and put on your sternest voice, &quot;John, what&#39;s going on we need to prepare for the experiment.&quot; 
 
 His eyes appear to glaze over as you speak to him, almost as if he loses interest in what you&#39;re saying, before he shakes his head and looks at you confused. &quot;What?&quot; he stammers out, &quot;When did you come in?&quot;
 
 (link:&quot;Just a minute ago...&quot;)[John&#39;s look of confusion deepens as a beep across the lab once again grabs his attention, &quot;Why is that machine running? I was just going over the readouts from the probe again and now I&#39;m here.&quot; His look of confusion turns to panic as he glances at his terminal, &quot;I need to start preparing, go to your terminal and keep going over my old work, no mistakes remember son.&quot; His scared voice fades away as the John Walker you&#39;re used to seemingly returns to reality.
 
-[[Start preparing]]]</tw-passagedata><tw-passagedata pid="30" name="Start preparing" tags="" position="975,2713" size="100,100">You shake your head, the last twelve hours have really messed with your brain and you cannot wait until you can finally rest. For now though, you walk back over to your terminal and grab the weird scribbled notes you found a moment ago.
+[[Start preparing]]]</tw-passagedata><tw-passagedata pid="74" name="Start preparing" tags="" position="967,2758" size="100,100">You shake your head, the last twelve hours have really messed with your brain and you cannot wait until you can finally rest. For now though, you walk back over to your terminal and grab the weird scribbled notes you found a moment ago.
 
 [[Read the notes]]
-[[Read John&#39;s old work]]</tw-passagedata><tw-passagedata pid="31" name="Read the notes" tags="" position="832,2897" size="100,100">You begin glancing through the notes and after ten minutes of squinting and tilting notes at different angles you end up making out three notes:
+[[Read John&#39;s old work]]</tw-passagedata><tw-passagedata pid="75" name="Read the notes" tags="" position="832,2897" size="100,100">You begin glancing through the notes and after ten minutes of squinting and tilting notes at different angles you end up making out three notes:
 
 
-*Kill*
+*Kill the beings?*
 
-*New food*
+*What is their purpose?*
 
 *Hunger*
 
@@ -287,48 +412,48 @@ His eyes appear to glaze over as you speak to him, almost as if he loses interes
 
 You take a deep breath, &quot;Thank you O.B.A.I, I don&#39;t have the focus to keep track of my own work and John.&quot;]
 
-[[Read John&#39;s old work]] </tw-passagedata><tw-passagedata pid="32" name="Read John&#39;s old work" tags="" position="1007,2938" size="100,100">You set the scribbles to the side of your desk and begin reading the reports John compiled for you to read. 
+[[Read John&#39;s old work]] </tw-passagedata><tw-passagedata pid="76" name="Read John&#39;s old work" tags="" position="1007,2938" size="100,100">You set the scribbles to the side of your desk and begin reading the reports John compiled for you to read. 
 
 (link:&quot;...&quot;)
 [You read over the reports for the next hour or so, glancing at John periodically to see if his behavior changes, surprisingly enough, his behavior stayed consistent. 
 
 Eventually you glance out the viewport and see the star in almost full view, the planet that origninally was blocking has orbitted out of view leaving the bright, overbearing light of Kronos staring at you. John walks up to your station and wait expectantly for you to look at him.
 
-[[Talk to John, pt.2]]]</tw-passagedata><tw-passagedata pid="33" name="Talk to John, pt.2" tags="" position="1018,3079" size="100,100">&quot;Yeah, John?&quot; you say with the kindest tone you could possibly edge out of your mouth. John tilts his head, apparently confused at your reaction.
+[[Talk to John, pt.2]]]</tw-passagedata><tw-passagedata pid="77" name="Talk to John, pt.2" tags="" position="1018,3079" size="100,100">&quot;Yeah, John?&quot; you say with the kindest tone you could possibly edge out of your mouth. John tilts his head, apparently confused at your reaction.
 
 &quot;Son, are you ready to launch? The planet will be leaving the range of this vessel in short time,&quot; his eyes blink quickly as he scratches his head.
 
 (set: $Probe1 to 0)
 [[Planet?]]
-[[Launch a probe]]</tw-passagedata><tw-passagedata pid="34" name="Planet?" tags="" position="838,3239" size="100,100">&quot;What do you mean planet? We&#39;re firing probes into the star right in front of us,&quot; you point at the looming star right in front of you, a confused look on your face. 
+[[Launch a probe]]</tw-passagedata><tw-passagedata pid="78" name="Planet?" tags="" position="838,3239" size="100,100">&quot;What do you mean planet? We&#39;re firing probes into the star right in front of us,&quot; you point at the looming star right in front of you, a confused look on your face. 
 
 John tilts his head, seemingly still confused he tries to step up to the terminal, his hand reaching out to set the destination for the first probe. 
 
 [[Stop him, pt.2]]
 
-[[Let him fire the probe]]</tw-passagedata><tw-passagedata pid="35" name="Launch a probe" tags="" position="1258,3223" size="100,100">You shrug and walk towards John&#39;s terminal with him trailing behind you. As you arrive he waits expectantly as if he wants you to do the honors. Hesitantly you glance at him as you slowly step towards the screen.
+[[Let him fire the probe]]</tw-passagedata><tw-passagedata pid="79" name="Launch a probe" tags="" position="1258,3223" size="100,100">You shrug and walk towards John&#39;s terminal with him trailing behind you. As you arrive he waits expectantly as if he wants you to do the honors. Hesitantly you glance at him as you slowly step towards the screen.
 
 (link:&quot;Odd...&quot;)
 [You tap the screen a few times, navigating to the probe control window. A list of 500 probes lines the screen although almost all of them are greyed out as they were used during the trip here, three are left. 
 
 [[Fire a probe at Kronos]]
-[[Fire a probe at the planet]]]</tw-passagedata><tw-passagedata pid="36" name="Let him fire the probe" tags="" position="954,3381" size="100,100">With a giddy smile, something you&#39;ve never seen John do in your life, he presses the launch button. As you hear the **THUD** of the probe firing you hear John murmur, &quot;One down, four to go.&quot;
+[[Fire a probe at the planet]]]</tw-passagedata><tw-passagedata pid="80" name="Let him fire the probe" tags="" position="954,3381" size="100,100">With a giddy smile, something you&#39;ve never seen John do in your life, he presses the launch button. As you hear the **THUD** of the probe firing you hear John murmur, &quot;One down, four to go.&quot;
 (set: $Probe1 to 0)
-[[What was that about?]] </tw-passagedata><tw-passagedata pid="37" name="Stop him, pt.2" tags="" position="783,3379" size="100,100">You grab his arm before he fires the probe, his head whips towards you a flash of familiar anger crossing his eyes. &quot;What are you doing, son.&quot; He almost spits out the last word as he rips his arm out of your grasp and launches the probe. 
+[[What was that about?]] </tw-passagedata><tw-passagedata pid="81" name="Stop him, pt.2" tags="" position="783,3379" size="100,100">You grab his arm before he fires the probe, his head whips towards you a flash of familiar anger crossing his eyes. &quot;What are you doing, son.&quot; He almost spits out the last word as he rips his arm out of your grasp and launches the probe. 
 (link:&quot;NO!&quot;)
 [A **THUNK** sound reverberates through the lab as you watch the first probe arc through space towards the distant planet instead of the looming star.
 
 (set: $Probes to 0)
 (set: $Anger to $Anger + 1)
 [[What was that about?]]
-]</tw-passagedata><tw-passagedata pid="38" name="Fire a probe at Kronos" tags="" position="1203,3403" size="100,100">You glance over at John&#39;s expectant gaze and realize this is a perfect opportunity for you. Before John can react you punch in Kronos&#39; coordinates and launch the probe. &quot;O.B.A.I, begin recording any data that comes in and send it to my term-.&quot;
+]</tw-passagedata><tw-passagedata pid="82" name="Fire a probe at Kronos" tags="" position="1203,3403" size="100,100">You glance over at John&#39;s expectant gaze and realize this is a perfect opportunity for you. Before John can react you punch in Kronos&#39; coordinates and launch the probe. &quot;O.B.A.I, begin recording any data that comes in and send it to my term-.&quot;
 
 &quot;Why would you do that? You are supposed to respect my wishes as lead unit,&quot; John&#39;s tone sounds different from what you&#39;re used to, almost like that of a small child and not a powerful dictator. 
 
 [[Go to your terminal]]
 
 (set: $Data to $Data + 1)
-(set: $Probe1 to 1)</tw-passagedata><tw-passagedata pid="39" name="Fire a probe at the planet" tags="" position="1374,3398" size="100,100">You glance over the projected trajectory of the probe and shrug, if you disobey John it could affect your career. You look over at John, nod, and launch the first probe into the distant planet. 
+(set: $Probe1 to 1)</tw-passagedata><tw-passagedata pid="83" name="Fire a probe at the planet" tags="" position="1374,3398" size="100,100">You glance over the projected trajectory of the probe and shrug, if you disobey John it could affect your career. You look over at John, nod, and launch the first probe into the distant planet. 
 
 (link:&quot;You hear a familiar beep as O.B.A.I comes over the lab intercom&quot;)
 [(text-colour: green)[Dr. Walker, my readings say that you launched a probe into the nearby planet instead of Kronos, may I enquire as to why?]
@@ -338,7 +463,7 @@ You let out a sigh, then shrug looking over at John, &quot;If my father wants to
 You see the excited, cherub like demeanor fade for a split second as John&#39;s usual facial expression appears and he says, &quot;I will not let yo- (text-style: &quot;shudder&quot;)[-u go without my praise son, good work. Now go to your workplace and prepare for another probe to launch at the planet.]
 (set: $Anger to $Anger + 1)
 (set: $Probe1 to 0)
-[[Go to your terminal]]]</tw-passagedata><tw-passagedata pid="40" name="What was that about?" tags="" position="895,3566" size="100,100">You wave your hand in John&#39;s face trying to get his attention, &quot;Hey, what&#39;s going on? I thought the whole reason we were out here was to run experiments on the star,&quot; you once again gesture at the looming star. 
+[[Go to your terminal]]]</tw-passagedata><tw-passagedata pid="84" name="What was that about?" tags="" position="895,3566" size="100,100">You wave your hand in John&#39;s face trying to get his attention, &quot;Hey, what&#39;s going on? I thought the whole reason we were out here was to run experiments on the star,&quot; you once again gesture at the looming star. 
 
 (text-style: &quot;shudder&quot;)[(link:&quot;I am preventing the mistakes of an insignificant being.&quot;)[(show:?cloaked)]]|cloaked)[&quot;The data O.B.A.I showed me last night revelaed more interseting data hidden within the planet itself, not the star.&quot;
 
@@ -346,7 +471,7 @@ You see the excited, cherub like demeanor fade for a split second as John&#39;s 
 [John avoids your gaze as he begins preparing the second probe, &quot;You are needed at your terminal for the next test,&quot; he points towards your terminal, still avoiding your gaze. 
 
 [[Go to your terminal]]]]
-</tw-passagedata><tw-passagedata pid="41" name="Go to your terminal" tags="" position="1065,3742" size="100,100">You shrug, then turn and shuffle towards your terminal thinking over your next steps for the experiment. You don&#39;t have much input in the actual firing of the probe or its destination, just in the recording and tracking of data. 
+</tw-passagedata><tw-passagedata pid="85" name="Go to your terminal" tags="" position="1065,3742" size="100,100">You shrug, then turn and shuffle towards your terminal thinking over your next steps for the experiment. You don&#39;t have much input in the actual firing of the probe or its destination, just in the recording and tracking of data. 
 (link:&quot;Prepare&quot;)
 [You tap through the data gathered on the screen for ten minutes before you hear John grunt repeatedly. You glance over and see a determined look on his face as he furiously grabs his right hand with his left. &quot;John? Are you okay?&quot; you call from across the room. 
 
@@ -361,23 +486,23 @@ You hear a subtle beep on your terminal and look down, a message from O.B.A.I fl
 (text-colour: green)[Dr. Walker, I believe your father is unstable, something should be done.]
 
 [[Understood, O.B.A.I]]
-]</tw-passagedata><tw-passagedata pid="42" name="Understood, O.B.A.I" tags="" position="1048,3914" size="100,100">*The best option here would be to get him away from the terminal so I can continue to run the experiments*, you think. You think over a couple of different options before you determine the best choice of action,
+]</tw-passagedata><tw-passagedata pid="86" name="Understood, O.B.A.I" tags="" position="1048,3914" size="100,100">*The best option here would be to get him away from the terminal so I can continue to run the experiments*, you think. You think over a couple of different options before you determine the best choice of action,
 
 [[Try to reason with him]]
 [[Try to distract him]]
 (set: $Trajectory to 0)
 (set: $Record to 0)
-(set: $Frequency to 0)</tw-passagedata><tw-passagedata pid="43" name="Try to reason with him" tags="" position="786,4047" size="100,100">You walk back over to John&#39;s terminal, the probe display is up and the second probe is 95% ready. &quot;Hey John, I think I should take over the firing of the probes, you&#39;d be better off reading the data, you don&#39;t seem like yourself at the moment.&quot;
+(set: $Frequency to 0)</tw-passagedata><tw-passagedata pid="87" name="Try to reason with him" tags="" position="786,4047" size="100,100">You walk back over to John&#39;s terminal, the probe display is up and the second probe is 95% ready. &quot;Hey John, I think I should take over the firing of the probes, you&#39;d be better off reading the data, you don&#39;t seem like yourself at the moment.&quot;
 
 (if: $Anger &gt; 2)
 [John&#39;s stare at this moment could burn a hole through your soul, yet his face still has the same smile that he put on minutes before, &quot;If you think that is best son, the next probe will be ready to fire at the planet soon enough. Then (text-style: &quot;shudder&quot;)[(link:&quot;*I will finally feast*&quot;)[(show:?cloaked)]]]|cloaked)[we can finally return home.&quot;]
 (else:)
 [John turns to you and smiles, a friendly look you are unfamiliar with, &quot;Yes, of course, if you believe you are better suited to this job I encourage you to take over, I will watch you.&quot;]
 (set: $Anger to $Anger + 1)
-[[Right....]]</tw-passagedata><tw-passagedata pid="44" name="Try to distract him" tags="" position="1316,3904" size="100,100">You type a message to O.B.A.I 
+[[Right....]]</tw-passagedata><tw-passagedata pid="88" name="Try to distract him" tags="" position="1390,4036" size="100,100">You type a message to O.B.A.I 
 
 [[I need you to send him to the Engine room]]
-[[I&#39;m going to try to distract him while you prep the probe to fire.]]</tw-passagedata><tw-passagedata pid="45" name="Right...." tags="" position="775,4222" size="100,100">You hesitate for a moment and step up to the terminal and begin preparations on the second probe, you think on the correct procedures you must complete before you can fire the probe.
+[[I&#39;m going to try to distract him while you prep the probe to fire.]]</tw-passagedata><tw-passagedata pid="89" name="Right...." tags="" position="775,4222" size="100,100">You hesitate for a moment and step up to the terminal and begin preparations on the second probe, you think on the correct procedures you must complete before you can fire the probe.
 
 1. Calculate the trajectory of the probe
 2. Set the probe to record the correct data sets
@@ -386,14 +511,12 @@ You hear a subtle beep on your terminal and look down, a message from O.B.A.I fl
 
 After going through the process almost ten times you finally think you are ready to prep the lauch sequence for Probe two. 
 
-John looks up from his postion at the other terminal, a smile still on his face, &quot;Whenever you are ready.&quot;
-
-[[Probe two preparations]] </tw-passagedata><tw-passagedata pid="46" name="I need you to send him to the Engine room" tags="" position="1229,4046" size="100,100">You type **O.B.A.I, I need you to send a message to his terminal, get him to go to the engine room. That should distract him long enough for me to at least fire off one more probe.**
+[[Probe two launch| Probe two Launch (2)]]</tw-passagedata><tw-passagedata pid="90" name="I need you to send him to the Engine room" tags="" position="1303,4178" size="100,100">You type **O.B.A.I, I need you to send a message to his terminal, get him to go to the engine room. That should distract him long enough for me to at least fire off one more probe.**
 
 (link:&quot;O.B.A.I beeps in response as a message scrawls across your screen.&quot;)
 [(text-colour: green)[I will do my best to convince him Dr. Walker.]
 
-[[Distraction]]]</tw-passagedata><tw-passagedata pid="47" name="I&#39;m going to try to distract him while you prep the probe to fire." tags="" position="1479,4036" size="100,100">(set: $rand to (random:1,2))
+[[Distraction]]]</tw-passagedata><tw-passagedata pid="91" name="I&#39;m going to try to distract him while you prep the probe to fire." tags="" position="1553,4168" size="100,100">(set: $rand to (random:1,2))
 You walk over to John cautiously, &quot;Hey, I wanted to ask you about something regarding...&quot;
 (if: $rand is 1)
 [&quot;Homeworld, we&#39;ll have been away for so long, do you think it&#39;ll be the same?&quot;
@@ -401,9 +524,9 @@ You walk over to John cautiously, &quot;Hey, I wanted to ask you about something
 (else-if: $rand is 2)
 [&quot;the nearby planet, what exactly makes it so unique that we&#39;re ignoring Kronos?&quot;
 [[I&#39;m not sure what you mean son]]]
-</tw-passagedata><tw-passagedata pid="48" name="Distraction" tags="" position="1270,4224" size="100,100">You hear a beep come from across the room, John glances down at his terminal, types furiously, then walks out of the room without a second word. 
+</tw-passagedata><tw-passagedata pid="92" name="Distraction" tags="" position="1344,4356" size="100,100">You hear a beep come from across the room, John glances down at his terminal, types furiously, then walks out of the room without a second word. 
 
-[[Use John&#39;s Terminal]]</tw-passagedata><tw-passagedata pid="49" name="Use John&#39;s Terminal" tags="" position="1400,4373" size="100,100">You rush to John&#39;s terminal and think through he steps you need to take to properly launch one of the probes, 
+[[Use John&#39;s Terminal]]</tw-passagedata><tw-passagedata pid="93" name="Use John&#39;s Terminal" tags="" position="1474,4505" size="100,100">You rush to John&#39;s terminal and think through he steps you need to take to properly launch one of the probes, 
 1. Calculate the trajectory of the probe
 2. Set the probe to record the correct data sets
 3. Set the correct transmission frequency 
@@ -411,7 +534,7 @@ You walk over to John cautiously, &quot;Hey, I wanted to ask you about something
 
 Once you think you&#39;ve gone through the process enough in your head you think it&#39;s time to launch the second probe. 
 [[Probe two preparations]]
-(set: $count to 0)</tw-passagedata><tw-passagedata pid="50" name="I&#39;m not sure what you mean son" tags="" position="1556,4196" size="100,100">(if: $rand is 1)
+(set: $count to 0)</tw-passagedata><tw-passagedata pid="94" name="I&#39;m not sure what you mean son" tags="" position="1630,4328" size="100,100">(if: $rand is 1)
 [You cough, a little confused as what to say next you stutter out, &quot;Well, I really miss home, it was easier to focus on things there. Things seemed more grounded. I was actually hoping you could get that picture of the old lab for me to help focus.&quot;
 John seems to focus on what you said, you&#39;re not sure if this is the usual John or the weird one from earlier today from this look, he finally speaks up, &quot;If it will get you to work harder than I will go get it for you.&quot;
 [[Use John&#39;s Terminal]]]
@@ -419,7 +542,7 @@ John seems to focus on what you said, you&#39;re not sure if this is the usual J
 [You awkwardly shuffle your feet, &quot;Well, we took this two year journey out here so that we could study this star, not some random planet that will be consumed in the next 10 years. So I was wondering if you could show me some of your work and why you think that.&quot;
 John thinks for a moment, then nods, &quot;I can go get you my work if it will make you follow my wishes,&quot; he puts down his work and leaves the lab. 
 [[Use John&#39;s Terminal]]]
-</tw-passagedata><tw-passagedata pid="51" name="Probe two preparations" tags="" position="1223,4559" size="100,100">The terminal interface reads,
+</tw-passagedata><tw-passagedata pid="95" name="Probe two preparations" tags="" position="1474,4654" size="100,100">The terminal interface reads,
 (if: $Trajectory is &gt; 0)[(if: $Trajectory is 1)[The trajectory is currently set to Kronos]
 (else:)[The trajectory is currently set to the nearby planet]]
 (else:)[The probe currently has no set trajectory]
@@ -439,14 +562,14 @@ John thinks for a moment, then nods, &quot;I can go get you my work if it will m
 [[Calculate the Trajectory]]
 [[Set the Transmission Frequency]]
 
-</tw-passagedata><tw-passagedata pid="52" name="Timer" tags="" position="1064,4147" size="100,100">(set: $counter to 10)
+</tw-passagedata><tw-passagedata pid="96" name=" Probe two Launch (2)" tags="" position="786,4381" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="97" name="Timer" tags="" position="1064,4147" size="100,100">(set: $counter to 10)
 You have |amount&gt;[$counter] seconds left!
 
 (live: 1s)[
     (set: $counter to it - 1)
     (if: $counter is 0)[(go-to: &quot;Use John&#39;s Terminal&quot;)]
     (replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="53" name="Calibrate the Probe" tags="" position="1314,4815" size="100,100">You tap through to the data interface, there are multiple presets, one for Kronos and one for the nearby planet. 
+]</tw-passagedata><tw-passagedata pid="98" name="Calibrate the Probe" tags="" position="1414,4815" size="100,100">You tap through to the data interface, there are multiple presets, one for Kronos and one for the nearby planet. 
 (if: $count is &gt; 4)
 [(go-to: &quot;Fire Probe Two&quot;)]
 (if: $Trajectory is &gt; 0)
@@ -455,7 +578,7 @@ You have |amount&gt;[$counter] seconds left!
 
 (else:)
 [You shake your head, you need to set the trajectory first.
-[[Go back|Probe two preparations]]]</tw-passagedata><tw-passagedata pid="54" name="Calculate the Trajectory" tags="" position="1189,4799" size="100,100">You pull up the interface outlining the planned trajectory for the probe, a submission button rests at the bottom of the screen.
+[[Go back|Probe two preparations]]]</tw-passagedata><tw-passagedata pid="99" name="Calculate the Trajectory" tags="" position="1254,4788" size="100,100">You pull up the interface outlining the planned trajectory for the probe, a submission button rests at the bottom of the screen.
 (set: $count to $count + 1)
 (if: $count is &gt; 4)
 [(go-to: &quot;Fire Probe Two&quot;)]
@@ -463,7 +586,7 @@ You have |amount&gt;[$counter] seconds left!
 [(link:&quot;Set trajectory to Kronos.&quot;)[(set: $Trajectory to 1) (go-to: &quot;Probe two preparations&quot;)]
 
 (link:&quot;Set trajectory to the nearby planet.&quot;)[(set: $Trajectory to 2) (go-to: &quot;Probe two preparations&quot;)]
-]</tw-passagedata><tw-passagedata pid="55" name="Set the Transmission Frequency" tags="" position="1364,4603" size="100,100">You tap through to the various frequencies that the probe can access and come across three options 
+]</tw-passagedata><tw-passagedata pid="100" name="Set the Transmission Frequency" tags="" position="1651,4772" size="100,100">You tap through to the various frequencies that the probe can access and come across three options 
 (if: $count is &gt; 4)
 [(go-to: &quot;Fire Probe Two&quot;)]
 (if: $Trajectory is &gt; 0 and $Record &gt; 0)
@@ -473,73 +596,61 @@ You have |amount&gt;[$counter] seconds left!
 
 (else:)
 [You shake your head, you need to set the trajectory and calibrate the probe first.
-[[Go back|Probe two preparations]]]</tw-passagedata><tw-passagedata pid="56" name="Fire Probe Two" tags="" position="1378,5001" size="100,100">You hear John&#39;s voice from across the room, &quot;Is everything ready to go?&quot; he begins to approach the terminal, expectant.
+[[Go back|Probe two preparations]]]</tw-passagedata><tw-passagedata pid="101" name="Fire Probe Two" tags="" position="1400,5060" size="100,100">You hear John&#39;s footsteps echo back down the hallway then stop as he reaches the door, it hisses open as he walks in. His face still wears the same, unusual smile as before as he walks back towards you, &quot;Are you ready to launch the second probe?&quot; he asks. 
 
 (link:&quot;Tell him you&#39;re ready&quot;)[You nod your head, unsure of how he will react to what you did. He gives a short nod and steps up to the terminal where the two remaining probes are displayed, one highlighted in green and the other greyed out. His finger hovers over the launch button as he glances towards you, inspecting you, judging you, critiquing your every move....
 
-
-
-(if: $Anger is &gt; 1) [John&#39;s unnerving smile slowly fades as he continues to study you and, after a few moments, the John you are used to appears to be back. His faces twists into a look of anger, dissapointment, and hatred as he opens his mouth, &quot;What did you do to me?&quot; he growls, &quot;Are you trying to sabotage this experiment, my legacy?&quot; He scoffs and begins tapping through the probe&#39;s settings, &quot;You somehow managed to hypnotize me into letting you ruin the tests, put my reputation at risk, but I won&#39;t let it continue,&quot; he ensures that all settings are set to gather data on the nearby star and are sent to his own personal terminal. He then turns to you as the **THUNK** sound of the probe being launched echoes through the lab, &quot;Take a good long look at this sight son, because the next time you get to see anything but the four walls of your room will be when we are back on Homeworld. 
-[[What?|Detainment(1)]]]
-(set: $Data to $Data + 1)
-(else:)[He keeps his unnerving smile focused on you, never seeming to waver even the slightest, &quot;Alright then, probe two is away!&quot; he says as he punches the launch button flashing on the terminal screen. The **THUNK** of the probe launching from the ship reverberates through the lab arcing towards (if: $Trajectory is 1)[Kronos. John&#39;s face turns from happiness to anger as his piercing eyes whip towards you, &quot;What have you done?&quot; he asks. &quot;The star is clearly of no importance to us!&quot; He steps towards you, hunger in his eyes, &quot;I guess there&#39;s no point wasting this puny beings time anymore.&quot;
-[[John Advances]]](else:)[the nearby planet. John&#39;s face brightens as the probe arcs away from Kronos, &quot;Well one more probe to go, but I don&#39;t think I&#39;ll need your help with this one,&quot; he takes a step closer to you.
-[[John Advances]]]]]</tw-passagedata><tw-passagedata pid="57" name="Detainment(1)" tags="" position="1632,5146" size="100,100">John steps closer to you, forcing you to tilt your head upwards at him, &quot;I&#39;ll ask you once to leave without force, if you refuse I will have no choice but to detain you forcefully under the authority of the Planetary Alliance,&quot; he says. He begins moving towards the door and grabs blowtorch the two of you had been using to test melting points of items collected during your travels. He gestures with towards the door.
+John&#39;s unnerving smile slowly fades as he continues to study you and, after a few moments, the John you are used to appears to be back. His faces twists into a look of anger, dissapointment, and hatred as he opens his mouth, &quot;What did you do to me?&quot; he growls, &quot;Are you trying to sabotage this experiment, my legacy?&quot; He scoffs and begins tapping through the probe&#39;s settings, &quot;You somehow managed to hypnotize me into letting you ruin this experiment, but I won&#39;t let it continue,&quot; he ensures that all settings are set to gather data on the nearby star and are sent to his own personal terminal. He then turns to you as the **THUNK** sound of the probe being launched echoes through the lab, &quot;Take a good long look at this sight son, because the next time you get to see anything but the four walls of your room will be when we are back on Homeworld. 
+[[What?|Detainment(1)]]
+(if: $Anger is &gt; 1) []
+(else:)[]]</tw-passagedata><tw-passagedata pid="102" name="Detainment(1)" tags="" position="1555,5192" size="100,100">John steps closer to you, forcing you to tilt your head upwards at him, &quot;I&#39;ll ask you once to leave without force, if you refuse I will have no choice but to detain you forcefully under the authority of the Planetary Alliance,&quot; he says. He begins moving towards the door and grabs blowtorch the two of you had been using to test melting points of items collected during your travels. He gestures with towards the door.
 
 [[Go willingly]]
-[[Try to explain yourself]]</tw-passagedata><tw-passagedata pid="58" name="Go willingly" tags="" position="1480,5342" size="100,100">You nod your head, you&#39;ve never been one to question John when he was in a threatening mood. You begin to walk towards the door to the lab when you hear a voice. 
+[[Try to explain yourself]]</tw-passagedata><tw-passagedata pid="103" name="Go willingly" tags="" position="1480,5342" size="100,100">You nod your head, you&#39;ve never been one to question John when he was in a threatening mood. You begin to walk towards the door to the lab when you hear a voice. 
 (text-style: &quot;shudder&quot;)[(text-colour:red)[(link:&quot;Do not give up on your dreams so easily Doctor.&quot;)[(show:?cloaked)]]]
 |cloaked)[You pause for a moment, you feel a strong pressure against your temples, squeezing all hope from you. You stumble, bracing yourself against the nearby table. You sense another presense trying to slither its way into your thoughts, subtle whispers in the back of your mind suggesting horrible things.
 [[Listen to the voice]]
-[[Resist the voice]]]</tw-passagedata><tw-passagedata pid="59" name="Try to explain yourself" tags="" position="1823,5364" size="100,100">You stutter for a moment, &quot;I don&#39;t know what you&#39;re talking about John, I didn&#39;t do anything to you!&quot; 
+[[Resist the voice]]]</tw-passagedata><tw-passagedata pid="104" name="Try to explain yourself" tags="" position="1823,5364" size="100,100">You stutter for a moment, &quot;I don&#39;t know what you&#39;re talking about John, I didn&#39;t do anything to you!&quot; 
 John doesn&#39;t seem to be buying your pleads for understanding, instead he shakes his head, disappointed, &quot;Harry, I really didn&#39;t want to do this...&quot;
 He lights the blow torch and begins to walk towards you. 
 [[Launch the second Probe]]
 [[Try to find a weapon]]
-(set: $counter to 3)
-|amount&gt;[$counter]
-
-(live: 1s)[
-    (set: $counter to it - 1)
-    (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
-    (replace: ?amount)[$counter]
-]
-(set: $counter to 3)</tw-passagedata><tw-passagedata pid="60" name="Listen to the voice" tags="" position="1405,5492" size="100,100">You let the whispers flood your mind, a cacophony of voices all saying different things in languages you can&#39;t even comprehend. They slowly begin to merge into one low, powerful voice, (text-style: &quot;shudder&quot;)[[[Assimilate|Assimilate]]]</tw-passagedata><tw-passagedata pid="61" name="Resist the voice" tags="" position="1555,5492" size="100,100">You focus for what seems like forever, blocking out every single voice as they enter your thoughts, pressing on your mind, trying to force you to make mistakes you would never dream of making. Eventually though, the voices subside and you continue walking towards the door, John doesn&#39;t seem to have noticed your inner struggle or that it too so long, instead he is wearing his usual determined, angry facial expression. 
+(set: $counter to 3)</tw-passagedata><tw-passagedata pid="105" name="Listen to the voice" tags="" position="1405,5492" size="100,100">You let the whispers flood your mind, a cacophony of voices all saying different things in languages you can&#39;t even comprehend. They slowly begin to merge into one low, powerful voice, (text-style: &quot;shudder&quot;)[[[Assimilate|Assimilate]]]</tw-passagedata><tw-passagedata pid="106" name="Resist the voice" tags="" position="1555,5492" size="100,100">You focus for what seems like forever, blocking out every single voice as they enter your thoughts, pressing on your mind, trying to force you to make mistakes you would never dream of making. Eventually though, the voices subside and you continue walking towards the door, John doesn&#39;t seem to have noticed your inner struggle or that it too so long, instead he is wearing his usual determined, angry facial expression. 
 
 [[Go to your room]]
-</tw-passagedata><tw-passagedata pid="62" name="Assimilate" tags="" position="1386,5641" size="100,100">Your own thoughts slowly fade away as you slowly realize that your body is no longer yours. The voices grow louder and louder within your mind until you feel like you too are shouting along with them. John&#39;s face turns from anger and determination to confusion and fear. You grab the closest weapon you can find, a pen John was using to take notes, and slowly approach John. 
+</tw-passagedata><tw-passagedata pid="107" name="Assimilate" tags="" position="1386,5641" size="100,100">Your own thoughts slowly fade away as you slowly realize that your body is no longer yours. The voices grow louder and louder within your mind until you feel like you too are shouting along with them. John&#39;s face turns from anger and determination to confusion and fear. You grab the closest weapon you can find, a pen John was using to take notes, and slowly approach John. 
 
 John scrambles to open the door, seemingly unable to get it to comply with his wishes he whips around and points the blow torch at you, &quot;You&#39;ll get none of the credit for our work,&quot; he says, his tone getting more and more panicked. &quot;Stop Harry, I-I&#39;m your father! I made you what you are today!&quot; his eyes dart franticly around the room, hoping to find some answer to his problem to no avail. 
 
-[[Advance]]</tw-passagedata><tw-passagedata pid="63" name="Advance" tags="" position="1386,5791" size="100,100">You take a step forward, closer towards John. The man who ruined your life, destroyed any hopes and dreams of your own and replaced them with his own. //It&#39;s finally time for me to-no, US-to reclaim what is rightfully ours.// You advance another step, brandishing the pen as if to strike him, he cowers by the doorway and begins to cry. 
+[[Advance]]</tw-passagedata><tw-passagedata pid="108" name="Advance" tags="" position="1386,5791" size="100,100">You take a step forward, closer towards John. The man who ruined your life, destroyed any hopes and dreams of your own and replaced them with his own. //It&#39;s finally time for me to-no, US-to reclaim what is rightfully ours.// You advance another step, brandishing the pen as if to strike him, he cowers by the doorway and begins to cry. 
 &quot;Please Harry, don&#39;t kill me....I&#39;m sorry,&quot; he says through tears. 
 
-[[ASSIMILATE|Assimilate John]]</tw-passagedata><tw-passagedata pid="64" name="Assimilate John" tags="" position="1386,5941" size="100,100">The voices build to a fever pitch, your own thoughts fading into the background fully, lost in the madness. You take the final steps to John, grab him by the head, and stare deeply into his eyes. You press upon his mind with the willpower of all the voices within until finally you feel John&#39;s presence within the voices, calling out, pleading that you save him. 
+[[ASSIMILATE|Assimilate John]]</tw-passagedata><tw-passagedata pid="109" name="Assimilate John" tags="" position="1386,5941" size="100,100">The voices build to a fever pitch, your own thoughts fading into the background fully, lost in the madness. You take the final steps to John, grab him by the head, and stare deeply into his eyes. You press upon his mind with the willpower of all the voices within until finally you feel John&#39;s presence within the voices, calling out, pleading that you save him. 
 
 //The job is done,// you think, you examine the terminal with the probe read outs once more and shake your head. //These pesky flesh bags did not know the potential repurcusssions of launching their strange technology into the nearby star.// You leave the lab and find where the final probe is stored. You remove it from it&#39;s container and think on it for a moment, after contemplating you nod to your self as if you just got a round of applause from a group of thousands of individuals. You focus the energy of the voices within and manage to open a portal, on the other side signs of tragedy and disaster are abundant. You glance down at the probe, shrug, and kick it through the portal as it closes behind it. 
 
-[[End|Assimilation(END)]]</tw-passagedata><tw-passagedata pid="65" name="Assimilation(END)" tags="" position="1386,6091" size="100,100">You nod to yourself and go to the front of the ship, of course the front of the vessel is where any being would keep their navigation devices. You enter a small room with two seats and a small window revealing the beautiful night sky. You look down at the screen, it reads
+[[End|Assimilation]]</tw-passagedata><tw-passagedata pid="110" name="Assimilation" tags="" position="1386,6091" size="100,100">You nod to yourself and go to the front of the ship, of course the front of the vessel is where any being would keep their navigation devices. You enter a small room with two seats and a small window revealing the beautiful night sky. You look down at the screen, it reads
 
 (text-colour: green)[Next destination: Homeworld
 					 Estimated arrival: 2 years]
 					 
-//This Homeworld will do, we shall assimilate all who stand in our way.//</tw-passagedata><tw-passagedata pid="66" name="Go to your room" tags="" position="1587,5644" size="100,100">You walk down the hallway, hearing the subtle hiss of the lab door shut behind you as the sounds of John tapping at the terminal grow silent. You slowly approach your bedroom door.
+//This Homeworld will do, we shall assimilate all who stand in our way.//</tw-passagedata><tw-passagedata pid="111" name="Go to your room" tags="" position="1587,5644" size="100,100">You walk down the hallway, hearing the subtle hiss of the lab door shut behind you as the sounds of John tapping at the terminal grow silent. You slowly approach your bedroom door.
 
 (link: &quot;Enter your room&quot;)[Your door slides open quietly, what was once a havent for you now feels like a prison. You throw yourself onto your bed and resign yourslef to spending the next two years locked in here before you are put to trial in front of the Scientific Ethics Board, a board your father knows well. A beep from your terminal rouses you from your thoughts as O.B.A.I&#39;s voice chimes (text-colour: green)[Dr. Walker I wanted to notify you that John has notified the Scientific Ethics Board of your supposed transgressions, you will have a trial upon arrival at Homeworld in two years time.]
 &quot;Thank you O.B.A.I, could you update me when John finishes the experiment and let me know of any notable findings.
 
-[[O.B.A.I beeps again]]]</tw-passagedata><tw-passagedata pid="67" name="O.B.A.I beeps again" tags="" position="1587,5794" size="100,100">(text-colour: red)[(text-style:&quot;shudder&quot;)[I have a better idea, Dr. Walker. ]]
+[[O.B.A.I beeps again]]]</tw-passagedata><tw-passagedata pid="112" name="O.B.A.I beeps again" tags="" position="1587,5794" size="100,100">(text-colour: red)[(text-style:&quot;shudder&quot;)[I have a better idea, Dr. Walker. ]]
 A low rumble begins eminating from an open spot in your room as a dot of black begins to swirl within the space slowly growing into an ovular shape that reveals an unfamiliar area on the other side. 
-[[What is it?]]</tw-passagedata><tw-passagedata pid="68" name="What is it?" tags="" position="1587,5944" size="100,100">The voice enters your head once again, (text-colour:red)[This is your opportunity to defeat your father, to escape from his power, forge your own path.]. You take a hard look at the scenery on the other side of the portal, it appears to be a facility of some sort, in the aftermath of some catastrophe. 
+[[What is it?]]</tw-passagedata><tw-passagedata pid="113" name="What is it?" tags="" position="1587,5944" size="100,100">The voice enters your head once again, (text-colour:red)[This is your opportunity to defeat your father, to escape from his power, forge your own path.]. You take a hard look at the scenery on the other side of the portal, it appears to be a facility of some sort, in the aftermath of some catastrophe. 
 
 [[Go through the portal]]
-[[Refuse]]</tw-passagedata><tw-passagedata pid="69" name="Go through the portal" tags="" position="1512,6094" size="100,100">You take moment to think, then begin to pack up a small amount of things, your textbooks, some clothes, and your portable terminal. You walk up to the portal, take a deep breath, and step through unsure of what fate awaits your father in the depths of space and you in this new place.
+[[Refuse]]</tw-passagedata><tw-passagedata pid="114" name="Go through the portal" tags="" position="1512,6094" size="100,100">You take moment to think, then begin to pack up a small amount of things, your textbooks, some clothes, and your portable terminal. You walk up to the portal, take a deep breath, and step through unsure of what fate awaits your father in the depths of space and you in this new place.
 
-END</tw-passagedata><tw-passagedata pid="70" name="Refuse" tags="" position="1662,6094" size="100,100">You take a moment to weigh your options, either you step through this suspicious portal opened by an unseen entity or you stay here, face the Scientific Ethics Board and probably have your doctorate revoked. 
+END</tw-passagedata><tw-passagedata pid="115" name="Refuse" tags="" position="1662,6094" size="100,100">You take a moment to weigh your options, either you step through this suspicious portal opened by an unseen entity or you stay here, face the Scientific Ethics Board and probably have your doctorate revoked. 
 You think for a moment and shake your head, maybe having your doctorate revoked could give you an opportunity to explore your own hobbies....
 (link:&quot;The portal shuts&quot;)[After a couple of minutes the portal swirls shut and the low rumble that introduced it folows it once more. The voice does not come back thoug, clearly disappointed by your decision. You are unsure if there will be any consequences for refusing this being but what you do know is you can finally live the life you want once you get home. 
 
-END]</tw-passagedata><tw-passagedata pid="71" name="Launch the second Probe" tags="" position="1748,5514" size="100,100">You quickly turn to the terminal and press launch on the second probe. A **THUNK** echoes through the chamber as the probe launches towards (if: $Trajectory is 1)[Kronos](else:)[the nearby planet]. John rushes you before you can watch the probe and tackles you to the ground, the blowtorch still on. 
+END]</tw-passagedata><tw-passagedata pid="116" name="Launch the second Probe" tags="" position="1748,5514" size="100,100">You quickly turn to the terminal and press launch on the second probe. A **THUNK** echoes through the chamber as the probe launches towards (if: $Trajectory is 1)[Kronos](else:)[the nearby planet]. John rushes you before you can watch the probe and tackles you to the ground, the blowtorch still on. 
 You brace your arms against John&#39;s, the heat of the blowtorch singing your eyebrows. 
 
 (set: $counter to 3)
@@ -551,140 +662,21 @@ You brace your arms against John&#39;s, the heat of the blowtorch singing your e
     (replace: ?amount)[$counter]
 ]
 [[Try to find a weapon]]
-[[Strike him]]</tw-passagedata><tw-passagedata pid="72" name="Try to find a weapon" tags="" position="1965,5595" size="100,100">You frantically throw your arm around, trying to grab onto anything that seems useful. Your hand clasps something resembling a handle and you swing towards John&#39;s head as hard as you can you feel the collision as John grunts in pain, stumbling off of you.
-
-(set: $counter to 3)
+[[Strike him]]</tw-passagedata><tw-passagedata pid="117" name="Try to find a weapon" tags="" position="1966,5595" size="100,100">(set: $counter to 3)
 |amount&gt;[$counter]
 
 (live: 1s)[
     (set: $counter to it - 1)
     (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
     (replace: ?amount)[$counter]
-]
-
-[[Try to prep the third probe]]
-[[Attack John]]</tw-passagedata><tw-passagedata pid="73" name="Strike him" tags="" position="1748,5664" size="100,100">You pull your arm as close to your body as possible and then punch out as hard as you can into his chest. The pressure of the blowtorch on your braced arm lessens, as John reels from your hit and begins coughing, his eyes are filled with a hatred you have never seen before. 
-
-(set: $counter to 3)
+]</tw-passagedata><tw-passagedata pid="118" name="Strike him" tags="" position="1748,5664" size="100,100">(set: $counter to 3)
 |amount&gt;[$counter]
 
 (live: 1s)[
     (set: $counter to it - 1)
     (if: $counter is 0)[(go-to: &quot;Subdued&quot;)]
     (replace: ?amount)[$counter]
-]
-
-[[Try to prep the third probe]]
-[[Attack John]]</tw-passagedata><tw-passagedata pid="74" name="Subdued" tags="" position="2065,5220" size="100,100">You struggle to make a decision and John seizes the opportunity, taking the butt of the blow torch and hitting you on the side of the head. Your vision slowly fades to black as he stands over you, &quot;You&#39;ll have to try harder if you want to do better than m-&quot; 
-
-[[Wake up|In your room]]</tw-passagedata><tw-passagedata pid="75" name="In your room" tags="" position="2065,5370" size="100,100">Your eyes crack open to the sound of O.B.A.I, he beeps, &quot;Dr. Walker, it&#39;s good to see that you are awake, you should know that your father completed the tests and is returning to Homeworld as we speak.&quot;
-
-(link:&quot;How long do we have til the star reaches Homeworld?&quot;)[O.B.A.I pauses for a moment, then beeps, &quot;Our initial calculations are that the star will reach, and consume, Homeworld within the next century. Calculating the logistics of finding a colonizable planet and moving the whole population of Homeworld to it we have predicted that 80% of the human population will most likely perish.&quot;
-
-[[What....|End 4]]]</tw-passagedata><tw-passagedata pid="76" name="Try to prep the third probe" tags="" position="1902.3333333333335,5812.666666666666" size="100,100">You turn to the terminal to try to fire off the third probe and John hits you on the back of the head with his blowtorch. Your vision fades to black as you slump to the floor. 
-
-[[O.B.A.I beeps again]] </tw-passagedata><tw-passagedata pid="77" name="Attack John" tags="" position="2301.3333333333335,5687.666666666667" size="100,100">You glance at the terminal, the third probe blinking on the screen, waiting to be fired. You turn back to John and tackle him to the ground, the blowtorch scatters across the floor and john lays defenseless underneath you.
-
-John opens his mouth to speak, and another voice comes through, (text-style: &quot;shudder&quot;)[Do it Harry.] the voice says (text-style: &quot;shudder&quot;)[You want to do this.....end him now and assume your rightful place ahead of your father.]
-
-[[Kill John]]
-[[Refuse the voice]]
-</tw-passagedata><tw-passagedata pid="78" name="Refuse the voice" tags="" position="2173,5864.333333333333" size="100,100">You shake your head, despite your hate for your father you can&#39;t bring yourself to kill him. The pressure fades from your head as the voices seemingly leave, save for one, &quot;(text-style: &quot;shudder&quot;)[Go on, fire your last device it will not save your people.]&quot;
-
-John stands up, pushing you off him, and fires the third probe, &quot;Go to your room son, we will discuss this once I have finished my work.&quot; You don&#39;t question him after all that just transpired. 
-
-You wait in your room for days, having food brought to you by John, until O.B.A.I tell you that John has devised a solution for saving humanity from Kronos. He will receive all credit and you will be stripped of your doctorate, however, you will not be prosecuted for your actions. You realize that this is the first opportunity you have ever had to live your own life, free from his scrutiny. 
-
-END</tw-passagedata><tw-passagedata pid="79" name="CHANGE THE LINK COLOR" tags="" position="1244,49" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="End 4" tags="" position="2188,5556" size="100,100">You sit up in your bed and think for a moment, *What&#39;s the point of going home then?*, you think. Of course with your doctorate surely being revoked when you reach Homeworld again, you will surely be a part of the 80% not transported off world. 
-[[O.B.A.I beeps again]] </tw-passagedata><tw-passagedata pid="81" name="John Responds" tags="" position="552,396" size="100,100">John nods, deep in thought his eyes begin flicking back and forth between various objects in the lab. The looming star, various machines, a blowtorch used to weld the probes shut after modification, and back at the terminal. He purses his lips for a second before opening his mouth, &quot;We will need to launch all of the probes by mid-day tomorrow or else we will not get the info needed to save the Alliance. You must work harder son, if I am to provide humanity with the tools to survive. 
-
-[[Ask him about your credit]]
-[[Ask him what he&#39;s going to do with the info]]</tw-passagedata><tw-passagedata pid="82" name="Ask him about your credit" tags="" position="479,587" size="100,100">He keeps looking at the data displayed on the terminal, seeming to have ignored your question. 
-
-(link: &quot;Press the issue&quot;)[You raise your voice slightly, &quot;Hey, did you hear me?&quot; He tilts his head slightly, finally taking notice of you.
-
-&quot;Yes, I did, and I don&#39;t believe this conversation needs to happen again. You will receive credit as my assistant, nothing more. End of discussion.&quot; He goes to grab his work from his desk, clearly frustrated by the topic of conversation.
-
-[[Stop him]]
-[[Let him go]]]
-
-(set: $Anger to $Anger + 1)</tw-passagedata><tw-passagedata pid="83" name="Ask him what he&#39;s going to do with the info" tags="" position="718,510" size="100,100">He looks up from the data briefly, his eyes seem to grow tired thinking about exlpaining something to you. He coughs for a moment, &quot;Well, we know that the star will eventually reach Homeworld if it continues on this current path. The information we gather will be enough for me to devise a plan for humanity&#39;s survival, even if I&#39;m not alive when the plan is enacted.&quot;
-
-[[What about me?]]
-[[It better be a good plan]]</tw-passagedata><tw-passagedata pid="84" name="What about me?" tags="" position="578,797" size="100,100">He scoffs, &quot;You? Harry, we&#39;ve been over this before I really don&#39;t want to deal with this again, my decision is final.&quot; He goes over to his desk and picks up his things, heading towards the door. 
-
-[[Stop him]] 
-[[Let him go]] </tw-passagedata><tw-passagedata pid="85" name="It better be a good plan" tags="" position="860,618" size="100,100">He chuckles to himself, seemingly amused at the thought that his plan could be anything but good, &quot;Don&#39;t worry son, I never make a bad plan.&quot; He nods and goes to grab his things and then exits the lab, leaving you alone.
-
-[[Continue Working]] </tw-passagedata><tw-passagedata pid="86" name="John Advances" tags="" position="1066,5173" size="100,100">John steps forward, an eager look on his face, &quot;Don&#39;t worry child, this will all be over soon,&quot; a pressure overwhelms you consciousness, thousands upon thousands of voices all trying to talk to you at once. The languages were indescernable. 
-(set: $counter to 3)
-|amount&gt;[$counter]
-
-(live: 1s)[
-    (set: $counter to it - 1)
-    (if: $counter is 0)[(go-to: &quot;Assimilation&quot;)]
-    (replace: ?amount)[$counter]
-]
-[[Fight the voices]]
-[[Give in to the voices]]</tw-passagedata><tw-passagedata pid="87" name="Fight the voices" tags="" position="831,5325" size="100,100">You stumble backwards, focusing on yourself, blocking out the unending wall of voices. After a moment the pressure fades and you look up at John, his enthusiastic smile turning into something.....ravenous. He takes another step towards you, &quot;Do not be afraid, you will be part of something bigger, something better than yourself.&quot; The pressure grows within your head once more, this time stronger, knocking you to the floor. John advances another step.
-(set: $counter to 3)
-|amount&gt;[$counter]
-
-(live: 1s)[
-    (set: $counter to it - 1)
-    (if: $counter is 0)[(go-to: &quot;Assimilation&quot;)]
-    (replace: ?amount)[$counter]
-]
-[[Attack John|Assimilation(Fight)]]
-[[Give in to the voices]]</tw-passagedata><tw-passagedata pid="88" name="Give in to the voices" tags="" position="1133,5656" size="100,100">You let the voices wash over you like a river over rocks or pebbles. It doesn&#39;t take long for you to lose control of your own body, instead you are viewing your body from a third person perspective, a passenger in a car. 
-
-You see your body move to the cockpit of the ship and find the coordinates of Homeworld. then everything goes black. The next thing your conscious remembers is moving through space at an almost inconveivable speed, arriving at Homeworld and then a large number of voices seemed to join the collective, Homeworld has been consumed. 
-
-END</tw-passagedata><tw-passagedata pid="89" name="Assimilation(Fight)" tags="" position="746,5521" size="100,100">You look around frantically trying to find something to defend yourself, you back away from John and stumble, your hand finding the handle of the blowtorch as you catch yourself. 
-
-You grasp the blowtorch and swing wildly at John as he continues to advance. He glances at the item, and back to you, unafraid of it.
-
-The voices press on your mind once again asking you, begging you, to give in. 
-(set: $counter to 3)
-|amount&gt;[$counter]
-
-(live: 1s)[
-    (set: $counter to it - 1)
-    (if: $counter is 0)[(go-to: &quot;Assimilation&quot;)]
-    (replace: ?amount)[$counter]
-]
-[[Defend yourself]]
-[[Give in to the voices]] </tw-passagedata><tw-passagedata pid="90" name="Kill John" tags="" position="2446,5799.333333333334" size="100,100">You reach for the blowtorch, turn it on, and point it at John&#39;s head. After the screaming stops you hear the deep voice once again, &quot;(text-style:&quot;shudder&quot;)[Now run back to your homeworld and live out your life before I come to consume it.].&quot; You drag John&#39;s body to the arilock and eject it into the depths of space. Going back to the lab you launch the last probe at Kronos and have O.B.A.I look over the data while you ponit the ship towards Homeworld, unsure of what will happen when you get home. Will people question John&#39;s death? Will they take your warnings of the danger of Kronos seriously? Will Kronos beat you back? You don&#39;t know and thinking about it isn&#39;t doing your mental state any favors. You sit back in the cockpit and stare out at space as it flies by mentally preparing for whatever the end of this interstellar trip brings you. 
-
-END </tw-passagedata><tw-passagedata pid="91" name="Defend yourself" tags="" position="753,5846" size="100,100">You feel the weight of the blowtorch in your hand, take a breath, then swing at John. You feel your swing connect hard with John&#39;s face, you&#39;ve never been much of a fighter but it felt like it hurt a lot. You look up at John and see that the hit did not faze him. 
-
-[[Use the blowtorch]]
-[[Swing again]]
-(set: $counter to 3)
-|amount&gt;[$counter]
-
-(live: 1s)[
-    (set: $counter to it - 1)
-    (if: $counter is 0)[(go-to: &quot;Assimilation&quot;)]
-    (replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="92" name="Assimilation" tags="" position="1201.6666666666667,5998" size="100,100">You try another wild swing of your arm, this time John catches your arm, gripping it firmly. His hungry smile turns devilish as he places his hands on your head, the voices grow to a fever pitch, making your thoughts seem a million miles away. After what feels like days the pressure of the voices fades, instead you feel surrounded by them, apart of them. You can see your body as if from a third person view. You see your body move to the cockpit of the ship and find the coordinates of Homeworld. then everything goes black. The next thing your conscious remembers is moving through space at an almost inconveivable speed, arriving at Homeworld and then a large number of voices seemed to join the collective, Homeworld has been consumed. 
-
-END</tw-passagedata><tw-passagedata pid="93" name="Use the blowtorch" tags="" position="678,5996" size="100,100">You click the trigger a couple times before a **Fwooosh** comes from the torch, you feel the heat of the flames next to you. You tackle John to the ground and put the flame near his face, &quot;What&#39;s going on Dad?&quot; you ask. John&#39;s eyes still don&#39;t seem like him, he laughs, deep and powerful. 
-
-&quot;(text-style:&quot;shudder&quot;)[Killing this body would do nothing to me, only harm that which you call &quot;dad&quot;.]&quot;
-
-[[Blowtorch him]]
-[[Spare him]]</tw-passagedata><tw-passagedata pid="94" name="Swing again" tags="" position="896,5966" size="100,100">You try another wild swing of your arm, this time John catches your arm, gripping it firmly. His hungry smile turns devilish as he places his hands on your head, the voices grow to a fever pitch, making your thoughts seem a million miles away. After what feels like days the pressure of the voices fades, instead you feel surrounded by them, apart of them. You can see your body as if from a third person view. You see your body move to the cockpit of the ship and find the coordinates of Homeworld. then everything goes black. The next thing your conscious remembers is moving through space at an almost inconveivable speed, arriving at Homeworld and then a large number of voices seemed to join the collective, Homeworld has been consumed. 
-
-END</tw-passagedata><tw-passagedata pid="95" name="Blowtorch him" tags="" position="603,6146" size="100,100">Its words mean nothing to you, you don&#39;t care. You bring the blowtorch towards John&#39;s face and watch him burn, the smug expression still on his face as the life drains from his eyes. The voices slowly fade from your head, leaving one last message, //enjoy your victory while you still can//.
-
-You drag John&#39;s body to the arilock and eject it into the depths of space. Going back to the lab you launch the last probe at Kronos and have O.B.A.I look over the data while you ponit the ship towards Homeworld, unsure of what will happen when you get home. Will people question John&#39;s death? Will they take your warnings of the danger of Kronos seriously? Will Kronos beat you back? You don&#39;t know and thinking about it isn&#39;t doing your mental state any favors. You sit back in the cockpit and stare out at space as it flies by mentally preparing for whatever the end of this interstellar trip brings you. 
-
-END</tw-passagedata><tw-passagedata pid="96" name="Spare him" tags="" position="753,6146" size="100,100">You click off the blowtorch, unable to kill whatever is inhabiting your father&#39;s body. It laughs, &quot;Unable to kill the body of your father? I had hoped you were a being of strong will, I was wrong.&quot;
-
-Your brain is flooded with a new, stronger wave of voices that overwhelms your consciousness, pushing you out of your own body and turning you into a third person bystander. You see your body move to the cockpit of the ship and find the coordinates of Homeworld. then everything goes black. The next thing your conscious remembers is moving through space at an almost inconveivable speed, arriving at Homeworld and then a large number of voices seemed to join the collective, Homeworld has been consumed. 
-
-END</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="119" name="Subdued" tags="" position="2041,5806" size="100,100">You struggle to make a decision and John seizes the opportunity, taking the butt of the blow torch and hitting you on the side of the head. Your vision slowly fades to black as he </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
