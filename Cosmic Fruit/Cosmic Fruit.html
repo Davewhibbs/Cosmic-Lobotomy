@@ -22,7 +22,13 @@
 
 
 
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
 
 
 
@@ -54,9 +60,9 @@ As the train departs, the strange man comes up an introduces himself.
 
 &quot;... I am.&quot;
 
-&quot;I knew it you look remarkabley like Suzy.&quot;
+&quot;I knew it you look remarkabley like your great Aunt.&quot;
 
-&quot;My great aunt Suzy?&quot;
+&quot;My great aunt?&quot;
 
 &quot;I would think yes. Her statue stands in the center of town afterall.&quot;
 
@@ -139,33 +145,37 @@ Graves stands up. &quot;Nancy, make sure you come see me at the library.&quot; H
 
 You open your mouth ready to scream when you notice the eyes looking curiously at you. Your mouth open you are faced with a decision.
 
-[[Scream and run to town for help|Act II Eaten Runnnig to town]]
+[[Scream and run to town for help|Act II Eaten Runnnig To town]]
 [[Stare back at the eyes|Act II Stare at the Eyes]]</tw-passagedata><tw-passagedata pid="22" name="Act II Evansville Center" tags="" position="602,2300" size="100,100">(if: $fate is &quot;fruit&quot;)[
-The town looks beautiful this morning. In fact you note that it&#39;s spledor is even greater than it was yesterday. The sun shining over the hills illumnating the center of town. Raindows are reflected in the fountain at the base of the [[statue|Act II Statue Description]]
+The town looks beautiful this morning. In fact you note that it&#39;s spledor is even greater than it was yesterday. The sun shining over the hills illumnating the center of town. Raindows are reflected in the fountain at the base of the [[statue|Act II Statue Description]].
 ](elseif: $fate is &quot;tree&quot;)[
-
+The town looks abandoned. A cold grey. Life has left the town as if sucked dry by the purple mist. The haze pulsing faster. The pull greater. You feel it eminating from the direction of the mine. In stark contrast to the rest of town, standing tall and bright, the [[statue|Act II Statue Description]]. 
 ]
 
 [[Evans&#39;s Estate|Act II Evans&#39;s Estate]]
 [[Bakery|Act II Evansville Bakery]]
 [[Library|Act II Evansville Library]]
 [[Clinic|Act II Evansville Clinic]]
-[[Old mining facility|Act II Evansville Mine]]</tw-passagedata><tw-passagedata pid="23" name="Act II Evans&#39;s Estate" tags="" position="1100,2403" size="100,100">(if: $fate is &quot;fruit&quot;)[
+[[Old mining facility|Act II Evansville Mine]]</tw-passagedata><tw-passagedata pid="23" name="Act II Evans&#39;s Estate" tags="" position="971,2329" size="100,100">(if: $fate is &quot;fruit&quot;)[
 Heading back towards the estate, you are overcome with a feeling of joy. You turn 180 degrees and walk right back to town.
 ](elseif: $fate is &quot;tree&quot;)[
-
+Eyes continue to watch from all around. It feels as though you are looking through a purple mist. Sitting on our dimmension shimmering in and out. There is a slight rhythmic pulse to the fog. Energy flowing out from some point. You feel its pull in the direction of town.
 ]
 
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="24" name="Act II Evansville Bakery" tags="" position="298,2301" size="100,100">(if: $fate is &quot;fruit&quot;)[
-&quot;I heard about what happened.&quot; Bending down the large man retrieves a freshly stocked pastry(fruit jelly donut). He offers it to you.
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="24" name="Act II Evansville Bakery" tags="" position="301,2352" size="100,100">(if: $fate is &quot;fruit&quot;)[
+&quot;I heard about what happened.&quot; Bending down the large man retrieves a freshly stocked fruit jelly donut. He offers it to you. &quot;It&#39;s what I&#39;m known for.&quot;
 
-(link: &quot;Take the pastry&quot;)[(set: $pastry to true)You take the pastry]
+(link: &quot;Eat the pastry&quot;)[
+&quot;Thanks.&quot; You reply as you eat the fruit. Your vision flashes, a giant grin forming on your face. Its the greatest flavor you&#39;ve ever tasted. Although oddly reminiscent. 
+
+&quot;I can tell you like it, have a nice day!&quot; The baker cheers in your direction.
+]
 
 ](elseif: $fate is &quot;tree&quot;)[
-
+You enter the shop. You don&#39;t see anyone at the counter. You do however, notice the giant [[brick oven|Act II Brick Oven]]
 ]
 
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="25" name="Act II Evansville Library" tags="" position="299,2504" size="100,100">(if: $fate is &quot;fruit&quot;)[
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="25" name="Act II Evansville Library" tags="" position="350,2500" size="100,100">(if: $fate is &quot;fruit&quot;)[
 (if: $leatherBook is false)[
 Graves head pops up over a distant shelf. &quot;Nancy! I&#39;m glad to see you.&quot; He darts back down, creaks ringing out from an old wood ladder. Running behind the main desk he produces a thin leather bound book.
 
@@ -176,53 +186,69 @@ Although worn from years of usde you think you make out the faint shape of a str
 ](elseif: $leatherBook is true)[
 &quot;I&#39;m sorry Nancy. I can&#39;t talk right now we are preparing for a town... festival.&quot; Graves announces.
 ]
-
 ](elseif: $fate is &quot;tree&quot;)[
+Entering the library you notice that the shelfs are full of cobwebs and moldy books. Small tendrals form, picking up the books, hurly them to and fro.
 
+&quot;This is the most fun I&#39;ve had in a while.&quot;
 ]
 
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="26" name="Act II Evansville Clinic" tags="" position="607,2461" size="100,100">You find a nurse at the front desk.
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="26" name="Act II Evansville Clinic" tags="" position="643,2498" size="100,100">You find a nurse at the front desk.
 
 (if: $fate is &quot;fruit&quot;)[
 Feeling better Nancy? The nurse states as you enter the room.
 
 You nod your head.
 ](elseif: $fate is &quot;tree&quot;)[
-The nurse stares at you.
+The doors of the clinic are locked.
 
-(link: &quot;Ask about the visions&quot;)[The nurse points to the exit. &quot;Please leave Nancy.&quot;]
-
+[[Peer inside|Act II Evansville Clinic Peer Inside]]
 ]
 
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="27" name="Act II Evansville Mine" tags="" position="804,2594" size="100,100">As you approach the mine you notice that some lanterns are lit.
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="27" name="Act II Evansville Mine" tags="" position="949,2597" size="100,100">As you approach the mine you notice that some lanterns are lit.
 
 With further inspection you notice that the previously blocked entrance has been opened back up.
 
-[[Approach the mine entrance|Act II Approaching The Mine]]
-[[Continue to watch from a distance|Act II Observe Mine]]
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="28" name="Act II Observing The Cult Meeting" tags="" position="801,3002" size="100,100">(if: $fate is &quot;fruit&quot;)[
+](elseif: $fate is &quot;tree&quot;)[
+The purple mist is pouring out from the entrance. Its pulse the strongest you&#39;ve seen it.
+]
+
+[[Approach the mine entrance|Act III Approaching The Mine]]
+[[Continue to watch from a distance|Act III Observe Mine]]
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="28" name="Act III Observing The Cult Meeting" tags="" position="852,3149" size="100,100">(if: $fate is &quot;fruit&quot;)[
 You expect everyone to be staring at you. Lucy quickly reigns everyone in and continues with the meeting.
 
 She continues to make grand gestures and [CONTENT] promises. Until final a bell sounds and a wall of the cave shifts from view. Out walks Graves.
 
-His long white cloak trails blazes him, reflecting the purple glow. A beautiful skull mask sits atop his head, with antlers that spiral towards the ceiling. He nods your way.
+His long white cloak trails behind him, reflecting the purple glow. A beautiful skull mask sits atop his head, with antlers that spiral towards the ceiling. He nods your way.
 
 &quot;Nancy, please come join me on stage.&quot; Graves exalts.
 
 With this a brief look of frustration flashes across Lucy&#39;s face.
 
-Graves steps up to the podium. &quot;I would like Nancy come join me on the stage.&quot;
+Graves steps up to the podium. He gestures your way.
 
-You make your way towards the [[stage|Act II Nancy Is Nominated]]
+You make your way towards the [[stage|Act III Nancy Is Nominated]].
 ](elseif: $fate is &quot;tree&quot;)[
+Lucy continues to preach about an ultimate freedom that awaits her and the invisible crowd. You catch a mention of the shedding of one&#39;s mortal coil. But as you start to pay attention, Lucy is interrupted by the sound of a bell. The puple haze twitchs, as a mouth fades into existence in front of you.
 
-]</tw-passagedata><tw-passagedata pid="29" name="Act III Resist The Cult" tags="" position="1001,3499" size="100,100">(set: $status = &quot;rebel&quot;)
+&quot;Time to shine Evans.&quot; The mouth making a mocking dance. &quot;I hope you make the right decision.&quot;
 
-[[Destroy the obelisk|The Obelisk]]</tw-passagedata><tw-passagedata pid="30" name="Act III Join The Cult" tags="" position="600,3500" size="100,100">(set: $status = &quot;member&quot;)
+A part of the cave wall shifts. Graves emerging from the breach, a long white cloak relflecting the purple glow of the room. An animal skull sits over his face, golden antlers spiraling forward.
 
-[[Touch the obelisk|The Obelisk]]</tw-passagedata><tw-passagedata pid="31" name="The Obelisk" tags="" position="800,3701" size="100,100">(if: $fate is &quot;fruit&quot;)[
+He leans towards Lucy, whispering a command.
+
+With this a brief look of frustration flashes across Lucy&#39;s face.
+
+Graves steps up to the podium as Lucy makes her way over to you.
+
+She unlocks the cuffs, leading you towards the [[stage|Act III Nancy Is Nominated]].
+]</tw-passagedata><tw-passagedata pid="29" name="Act III Resist The Cult" tags="" position="1201,3900" size="100,100">(set: $status = &quot;rebel&quot;)
+
+[[Destroy the obelisk|The Obelisk]]</tw-passagedata><tw-passagedata pid="30" name="Act III Join The Cult" tags="" position="803,3899" size="100,100">(set: $status = &quot;member&quot;)
+
+[[Touch the obelisk|The Obelisk]]</tw-passagedata><tw-passagedata pid="31" name="The Obelisk" tags="" position="1000,3999" size="100,100">(if: $fate is &quot;fruit&quot;)[
 	(if: $status is &quot;member&quot;)[
-	You live a long happy life. You never see your father again, but this is fine as you have forgotten he exists.
+	You live a long happy life. You never see your father again, but this is fine as you don&#39;t remember who or what that is.
 	](elseif: $status is &quot;rebel&quot;)[
 
 ]
@@ -241,13 +267,13 @@ Wake your [[father|Wake Your Father Up]]</tw-passagedata><tw-passagedata pid="33
 
 Realizing you miss your father. You wake him and y&#39;all make plans to get breakfast from the diner in town like you used to.
 
-You completely forget about the train you had to catch. The ticket vanishes from your life.</tw-passagedata><tw-passagedata pid="34" name="Act II Statue Description" tags="" position="490,2460" size="100,100">(if: $fate is &quot;fruit&quot;)[
+You completely forget about the train you had to catch. The ticket vanishes from your life.</tw-passagedata><tw-passagedata pid="34" name="Act II Statue Description" tags="" position="604,2164" size="100,100">(if: $fate is &quot;fruit&quot;)[
 You inspect the statue. Unlike the rest of town the statue seems rather melancholy. A dull gray among the livid display of the town, your aunt sadly points off into the distance.
 ](elseif: $fate is &quot;tree&quot;)[
-
+You inspect the statue. Unlike the rest of town, the purple mist has not settled on it. A shining display amoungst the dreariness. Your Aunt proudly points off into the distance.
 ]
 
-[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="35" name="Act II Eaten Runnnig to town" tags="" position="786,2203" size="100,100">Horrified and distraught. You make a mad dash from the estate. You notice more eyes popping out at the corners of your vision. This spurs you on even faster.
+[[Center of town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="35" name="Act II Eaten Runnnig To town" tags="" position="786,2203" size="100,100">Horrified and distraught. You make a mad dash from the estate. You notice more eyes popping out at the corners of your vision. This spurs you on even faster.
 
 [[Continue to town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="36" name="Act II Stare at the Eyes" tags="" position="1102,2201" size="100,100">The eyes roll. Like a child having their expectations ruined. They continue to roll, until they spiral out of existence. A mouth emerges in their place. A voice booms.
 
@@ -255,16 +281,20 @@ You inspect the statue. Unlike the rest of town the statue seems rather melancho
 
 
 
-[[Explore the house|Act II Evans&#39;s Estate]] </tw-passagedata><tw-passagedata pid="37" name="Act II Approaching The Mine" tags="" position="599,2699" size="100,100">(if: $fate is &quot;fruit&quot;)[
+[[Explore the house|Act II Evans&#39;s Estate]] </tw-passagedata><tw-passagedata pid="37" name="Act III Approaching The Mine" tags="" position="851,2801" size="100,100">(if: $fate is &quot;fruit&quot;)[
 You walk up to the mine entrance. As you get a better angle on the opening, you notice Lucy Helens standing just inside.
 
 &quot;Welcome Nancy!&quot; She squeeks. &quot;I&#39;m assuming you will be joining us.&quot;
 
-[[You nod your head|Act II Tour Of The Mine]]
+[[You nod your head|Act III Tour Of The Mine]]
 
 ](elseif: $fate is &quot;tree&quot;)[
+You walk up to the mine entrance. The fog pulses as a pair of eyes pop up above the entrence. The eyes dialte as a hand materlizes, pointing behind you.
 
-]</tw-passagedata><tw-passagedata pid="38" name="Act II Observe Mine" tags="" position="999,2705" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Act II Tour Of The Mine" tags="" position="599,2898" size="100,100">The mayor leads you down into a labyrinth of caves. You quickly lose track of where you are. All you can tell is you are spiraling downwards.
+&quot;Nancy. You aren&#39;t exactly welcome here.&quot;
+
+A sharp pain sprouts at the base of your neck. A cloaked figure wearing a strange headress, pokes your face with a finger. &quot;...not welcome...&quot; All you can make out as your vision [[fades|Act III Knocked Out]]
+]</tw-passagedata><tw-passagedata pid="38" name="Act III Observe Mine" tags="" position="1055,2797" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Act III Tour Of The Mine" tags="" position="700,3000" size="100,100">The mayor leads you down into a labyrinth of caves. You quickly lose track of where you are. All you can tell is you are spiraling downwards.
 
 Lucy silently guides you with a furrowed brow, that quickly disappears when illumnated. Lanterns fill the cave with a faint glow leaving large gaps darkness.
 
@@ -273,17 +303,18 @@ You round another bend. You notice a faint purple glow in front of you. Vines se
 This is when you notice 2 things.
 
 1. All of the townsfolk are dressed in the same cloak and headpiece.
-2. The source of the purple light is comeing from a fruit growing on the vines. The same fruit you saw growing on the large tree.
+2. The source of the purple light is coming from a lovely purple fruit that you swear you&#39;ve never seen before.
 
 Lucy leaves you to your own devices as she takes a spot on a small stage at the end of the room.
 
 &quot;Nancy, welcome to Evansville! I see you tried our fruit. It&#39;s what we are known for afterall.&quot;
 
-[[You are part of a cult meeting|Act II Observing The Cult Meeting]]</tw-passagedata><tw-passagedata pid="40" name="Act II Nancy Is Nominated" tags="" position="603,3155" size="100,100">You make your way through the crowd as faces obscured by varius horned masks stare at you. The prevoius frustration has become more evident on Lucy&#39;s face, as if something has dawned on her.
+[[You are part of a cult meeting|Act III Observing The Cult Meeting]]</tw-passagedata><tw-passagedata pid="40" name="Act III Nancy Is Nominated" tags="" position="852,3325" size="100,100">(if: $fate is &quot;fruit&quot;)[
+You make your way through the crowd as varius horned masks stare at you. The prevoius frustration has become more evident on Lucy&#39;s face, as if something has dawned on her.
 
 &quot;Graves are you sure, she is an outsider?&quot; Lucy starts.
 
-Graves raises an eyebrow, shiftin his mask back slightly. &quot;Why are you questioning our decision? She has her blood after all.&quot;
+Graves raises an eyebrow, shifting his mask back slightly. &quot;Why are you questioning our decision? She has her blood after all.&quot;
 
 Lucy turns to stare at you. Facing Graves again. &quot;She doesn&#39;t even understand what&#39;s happening? What has she done to deserve the freedom!&quot;
 
@@ -295,10 +326,61 @@ Graves snaps his fingers. A set of twins emerges from the shadows. &quot;Please 
 
 At the sight of the twins, Lucy begins to back pedal. &quot;What have I done to deserve this? Please don&#39;t do this!&quot; The twins grab her shoulders and haul her off.
 
-The group [[disapears into the darkness.|Act II Status Decision]]</tw-passagedata><tw-passagedata pid="41" name="Act II Status Decision" tags="" position="801,3299" size="100,100">Graves gestures towards a stone structure at the back of the stage. &quot;Please place your hand here.&quot;
+Lucy and the twins [[disapear into the darkness.|Act III Status Decision]]
+](elseif: $fate is &quot;tree&quot;)[
+Eyes begin to fill up the spaces between the roots. Each blinking on its own. A pair of floating hands makes crude gestures at Graves.
+
+&quot;Nancy.&quot; Graves starts. &quot;I&#39;d like to make you an offer, freedom from your...&quot;
+
+Lucy interrupts Graves. &quot;Are you kidding me?&quot; All the eyes in the room blink in unison. Graves is taken aback. A breif awkward moment passes before Graves turns back to you to continue.
+
+Defeat washes over Lucy. For a moment she seems lost. Regaining some of her intial composure. &quot;Graves.&quot; She stammers, gaining some momentum. &quot;Graves. What is the meaning of this?&quot;
+
+Graves raises an eyebrow, shifting his mask back slightly. &quot;Why are you questioning our decision? She has her blood after all.&quot;
+
+Lucy turns to stare at you. Facing Graves again. &quot;She doesn&#39;t even understand what&#39;s happening? What has she done to deserve the freedom!&quot;
+
+Graves sneers at Lucy. &quot;Silence! You&#39;d do well to remember your place.&quot;
+
+Lucy freezes for a moment before finding her composure. &quot;You mean my place as your humble servent. I have done more than enough to deserve the freedom!&quot; She points at Graves.
+
+Graves snaps his fingers. A set of twins emerges from the shadows. &quot;Please take Lucy to the roots. She could use a break.&quot;
+
+At the sight of the twins, Lucy begins to back pedal. &quot;What have I done to deserve this? Please don&#39;t do this!&quot; The twins grab her shoulders and haul her off.
+
+Lucy and the twins [[disapear into the darkness.|Act III Status Decision]]
+]</tw-passagedata><tw-passagedata pid="41" name="Act III Status Decision" tags="" position="851,3501" size="100,100">Graves gestures towards a the obelisk at the back of the stage. &quot;Please place your hand here.&quot;
+
+[[Place your hand|Act III Place Your Hand]]
+[[Ask about the twins and the roots|Act III Ask Graves]]</tw-passagedata><tw-passagedata pid="42" name="Act II Brick Oven" tags="" position="130,2235" size="100,100">Emenatiing a small amount of purple mist. You take a step forward. The metal door flying open. A mouth begins to from at the front of oven. Long teeth protrude from its mouth.
+
+&quot;Now Nancy. I&#39;d advise against this, but there are some pastries inside this oven that could prove useful.&quot; The mouth started &quot;But. You would need to climb inside to reach them.&quot;
+
+[[Climb inside|Act II Inside The Brick Oven]]
+[[Leave|Act II Evansville Center]] </tw-passagedata><tw-passagedata pid="43" name="Act II Inside The Brick Oven" tags="" position="100,2401" size="100,100">You climb into the oven. The ethereal teeth closing behind you, with a satisfying chomp.
+
+You are never seen again.</tw-passagedata><tw-passagedata pid="44" name="Act III Knocked Out" tags="" position="1002,3003" size="100,100">You wake up in an expansive room, deep underground. You take notice of a few details. The room is dyed purple. The mist swirling and pulsing from a obelisk atop a stage like platform at the back of the room. Where Lucy is giving a rather impressive speech to an empty chamber. Vines, possibley tree roots, snake across the walls and ceiling of the chamber. Producing the same strange fruit from the dream you had. your hands are chained to the back wall of the cave.
+
+Pairs of eyes and mouths liter the room. Each with a finger to their respective lips.
+
+The voice whispers to you. &quot;Nancy probably best you play along.&quot;
+
+Lucy looks your way. &quot;Nancy.&quot; She snorts
+
+&quot;I know you haven&#39;t tried our fruit yet. Which is unfortunate. As it&#39;s what we are known for. I&#39;m sure you&#39;ll love it!&quot;
+
+You nod your head. She gives a satisfied shrug. Returning to the procession.
+
+&quot;Sorry for the interuption.&quot; Gesturing to the empty room. Lucy returns to her previous monolouge.
+
+[[Watch the proceedings|Act III Observing The Cult Meeting]]</tw-passagedata><tw-passagedata pid="45" name="Act II Evansville Clinic Peer Inside" tags="" position="499,2605" size="100,100">The clinic is completely empty. All proof of its realtions to health care gone. A translucent hand appears, its fingers curl in as it turns its thumb down.
+
+&quot;Nancy.&quot; The voice hisses. &quot;Do you really think a doctor could help you?&quot; It pauses. &quot;Especially here!&quot; The hand convulses as its laughter fades into the distance.
+
+[[Sulk back to town|Act II Evansville Center]]</tw-passagedata><tw-passagedata pid="46" name="Act III Place Your Hand" tags="" position="1001,3699" size="100,100">
 
 [[Join|Act III Join The Cult]]
-[[Rebel|Act III Resist The Cult]] </tw-passagedata></tw-storydata>
+[[Resist|Act III Resist The Cult]] </tw-passagedata><tw-passagedata pid="47" name="Act III Ask Graves" tags="" position="599,3700" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
