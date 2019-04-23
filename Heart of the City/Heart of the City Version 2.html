@@ -1,0 +1,324 @@
+<tw-storydata name="Heart of the City" startnode="1" creator="Twine" creator-version="2.2.1" ifid="80F9FF66-4FFE-408B-9210-3BBA25B2EDE1" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
+ line-height: 1.8; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Street 1" tags="" position="653,0" size="100,100">Things are looking up for you, Douglas Freeman. For the first time in a long time the dark cloud of foreboding thoughts that has followed you around has seemed to dissapate. It&#39;s been so long since you&#39;ve had good fortune.  What had changed, you ask yourself. In truth, nothing. It wasn’t like you won the lottery, gotten a promotion, or fallen in love. You have decided that all of the misery in your life was merely the result of a bad attitude. 
+
+“A rebranding” you thought, “maybe if I stop focusing on the problems that plague my existence day in and day out, and instead try my damndest to cherish what little joy I have in my life, things will start to look up for me.” And try, you did. Slowly but surely, as you persevered to see the good things in his life, life seemed to change for the better. No longer are you frustrated with the toil and monotony of your dead-end job. You&#39;ve made a full turn around.
+
+Today, you feel great. For the first time years, you are completely relaxed and happy. It is a beautiful bright day with a clear blue sky. A gentle breeze wafts through the air. You have a spring in your step, and are humming the tune of your favorite song.
+
+You are Douglas Freeman. Feeling up on your luck, you are enjoying a nice walk home from work. As you walk down the street the sounds of the city fill your ears.
+[[Continue...-&gt;Street 2]]
+
+(set: $arnie is false)</tw-passagedata><tw-passagedata pid="2" name="Dog 1" tags="" position="1253,130" size="100,100">Approaching the alley you see a small black dog warily wagging its tail as you walk closer and closer. Walking closer to the dog, you see it is filthy, covered in dirt and grime, with its fur matted black, and smelling strongly of the miscellaneous refuse littering the ground.
+
+As you approach the dog, it slowly retreats, eyeing you with its lowered muzzle.
+
+You squat down, slowly extending your hand out to the dog</tw-passagedata><tw-passagedata pid="3" name="Street 2" tags="" position="654,126" size="100,100">Ignoring the particularly repulsive stench of the narrow alley, you have decided to continue to move your way down the street. Nodding your head to other tired people relieved to have finished their day working at assembly lines and other various factories around the city&#39;s sprawling industrial district.
+
+(link:&quot;Textile workers...&quot;)[Workers from all over the district, all heading home from the evening all heading home for the evening, are covered in all manner oils, grime and grease. 
+
+(link:&quot;As the numerous denizens...&quot;)[As the numerous denizens of the city begin to clear up, you look to the sky for a brief glimpse of nature before finishing your walk home. 
+
+Once again, you hear a noise from a nearby alley, this time a woman crying for help. &quot;Help! Anyone? I need assistance!&quot;
+
+[What do you want to do?]
+[[Go over to the alley to investigate (main path)-&gt;Woman 1]]
+[[Ignore the cries for help - it&#39;s probably a scam-&gt;Street 3]]
+]]</tw-passagedata><tw-passagedata pid="4" name="Woman 1" tags="" position="809,130" size="100,100">As the woman called out, you thought to yourself that this would be a perfect opportunity to help someone besides yourself for once. You think part of the reason you&#39;d felt so unhappy for so long was that you were being selfish, considering only yourself, and perhaps helping this young lady would further improve your outlook. 
+
+(link:&quot;After all...&quot;)[After all, it was said that the greatest gift was giving. Well, you haven&#39;t been on the giving or receiving end for the longest time, especially after you moved to the city for work. It was about time you helped someone out.
+
+(link:&#39;&quot;Oh thank god...&quot;&#39;)[&quot;Oh thank god someone finally came to help! Please, in my rush I seem to have misplaced my necklace!&quot;
+
+&quot;Okay&quot;, you respond, &quot;where do you think you lost it?&quot;
+
+&quot;It must be close by,&quot; the woman said frantically &quot;I can&#39;t believe I lost it, I just got it the other day&quot;
+
+&quot;No worries ma&#39;am I&#39;d be happy to help.&quot;
+[[Continue-&gt;Woman2]]
+]]</tw-passagedata><tw-passagedata pid="5" name="Street 3" tags="" position="515,131" size="100,100">You&#39;ve seen many optimistic and friendly passersby fall victim to schemes such as these. Though you&#39;ve been trying your best to see the good in people, this woman is giving you a fishy feeling and you suspect she is up to no good, probably trying to lure you in close to rob you at gun point. Or something like that. Either way you&#39;re just trying to get home safely.
+[[Continue-&gt;Street 4]] </tw-passagedata><tw-passagedata pid="6" name="Woman2" tags="" position="741,256" size="200,100">Gazing down the alley you see a sharp bend where you suppose the woman must&#39;ve come from to get to her current standing. Making you&#39;re way around the corner, you see a sort of crossroads in between the dingy sides of the buildings. You see a path leading straight back, snaking towards some sort of restaurant or bar, and the distinct smell of trash fills your nostrils. The other path, bending off to the right seems like a much more promising option, as it seems to you that the path would lead to another open street, the logical entry point the woman would have taken.
+
+Where do you want to go?
+[[Straight Ahead towards the stench-&gt;Woman2Alley1]]
+[[Around the right corner (main path)-&gt;Woman2Alley2]]
+
+(set: $chefVisited to false)</tw-passagedata><tw-passagedata pid="7" name="Woman2Alley1" tags="" position="613,380" size="100,100">You find it incredibly easy to follow the stench that permeates the alley way.
+
+(if: $arnie is true)[You and Arnie follow the smell to the back lot of a grungy building, with overflowing garbage bins and muffled yelling.]
+(else:)[You follow the smell to the back lot of a grungy building, with overflowing garbage bins and muffled yelling.]
+
+[[Ask inside if anyone has seen the woman&#39;s necklace-&gt;chef]]</tw-passagedata><tw-passagedata pid="8" name="chef" tags="" position="611,518" size="100,100">To your surprise, the door is opened the instant you rap your knuckles on the door. &quot;Wadda ya want?&quot; An irate, one-eyed man in a dirty cook&#39;s uniform yanks door abruptly away from you, your hand still in motion for a second knock. Sputtering on your words, you are quickly interrupted by the man &quot;OUT WITH IT BOY&quot;.
+
+(if: $arnie is true)[&quot;What my friend doug here is trying to say is do you have a heart-shaped locket here?&quot; (set: $chefVisited is false)]
+
+&quot;I sure do, got it right here!&quot; The man pulls the necklace from a pocket on his dirty apron.
+
+&quot;Great! Now give it here so I can return this to my sister.&quot;
+
+The cook tucks the necklace safely into his pocket. &quot;I&#39;ll tag along along with you. Just want ta make sure this gets back ta its owner.&quot;
+
+Arnie responds, slightly irritated. &quot;Listen, there&#39;s really no reason to do that. We have this all under control. Now hand over the locket.&quot;
+
+&quot;I insist.&quot;
+
+&quot;Don&#39;t push your luck old man. Hand over the locket.&quot;
+As Arnie says this he moves his coat slightly, revealing a pistol at his hip.
+
+The cook reluctantly hands over the locket.
+(else:)[
+
+&quot;My friend thinks she lost her necklace around here. Have you seen a heart-shaped locket?&quot;
+
+&quot;It wouldn&#39;t happen to look anything like would it?&quot; The man dangles the silver locket from his hand, admiring its workmanship.
+
+&quot;Thank you so much&quot; you say reaching your hand out for it. As soon as you start, the man pulls his hand back.
+
+&quot;Not so fast young man, it&#39;s going to cost you!&quot;
+
+You check your pockets, and start to pull your wallet out of your pocket.
+
+The man gives you a toothy grin. &quot;Just kidding with ya boyo, just let me tag along with you ta make sure this gets back ta its owner. The man gives you a wink, and a pat on your back.
+
+&quot;Never can be too careful ya know.&quot;
+
+You start back towards the woman, with the necklace and a jolly one-eyed cook in tow.
+(set: $chefVisited to true)]
+
+[[Continue-&gt;Woman3]]
+
+</tw-passagedata><tw-passagedata pid="9" name="Woman2Alley2" tags="" position="790,449" size="100,100">Though you thought the alley went straight through to the next street, you realize that you really haven&#39;t explored much of the city you&#39;ve been living in the last couple of years. The alley appears to travel quite a bit with a number of different avenues crossing and intersecting its path. Surely there was no way for you to narrow down your options without the help of the woman. You decide it&#39;s in your best interest to return to the woman to help narrow down the search.
+
+[[Continue-&gt;Woman3]]</tw-passagedata><tw-passagedata pid="10" name="Woman3" tags="" position="705,651" size="100,100">Weaving your way back to where you first met the woman, you find her there, with a dirty hound, with matted fur and a single mangled ear. She gently caresses the dog, its tail waggling happily, with a silver heart-shaped locket clasped securly around her neck.
+
+&quot;Hey! What going on here?&quot;, you shout.
+(if: $chefVisited is true)[&quot;I thought you said she lost her necklace boyo.&quot;
+
+The woman gives you both a wry smile. With sparkles in their eyes, the woman and the dog stare directly at you and the grimey cook, and simultaneously wink, their forms turn ethereal, shimmering and writhing as they dissolve into the filthy alleyway.]
+(else:)[
+The woman gives you  a wry smile. With sparkles in their eyes, the woman and the dog stare directly into yours, and simultaneously wink, their forms turn ethereal, shimmering and writhing as they dissolve into the filthy alleyway.]
+
+[[Continue...-&gt;creep1]] </tw-passagedata><tw-passagedata pid="11" name="creep1" tags="" position="701,777" size="100,100">Blinking slowly and rubbing your eyes, the lusterous light of late afternoon has vanished, replace instead with a wall of black glass-like stone. Slack jawed, you turn around. Where the bright light of the day had cascaded moment ago, the walls of alley are now scarcely illuminated with a pale, lusterless glow.
+
+(if: $chefVisited is true)[&quot;What in the hell is going on here? What have ya wrapped me into boy?&quot;
+
+&quot;Don&#39;t ask me! I don&#39;t know what is happening! I was just trying to help a stranger out!
+
+After a few moments the old cook sighs. &quot;Okay. Well whatever this is boyo, we can get through this. I&#39;ve been through my fair shair of strange situations. I bet you have too.&quot;]
+
+The alley extends before you, not so straight and not so normal as it was seconds ago.
+[[Continue down the alley-&gt;creep2]]</tw-passagedata><tw-passagedata pid="12" name="creep2" tags="" position="534,868" size="100,100">As you walk down the alley, you begin to relax. Maybe you&#39;ve gotten over the initial shock of this bizarre situation, or maybe it&#39;s your new found outlook on life. In any case, the alley is growing wider and wider as you progress. Steady flow of cool air blows past you. Pushing further and further down the passage you arrive suddenly at a clearing - a vast room containing a pit crossed by a narrow bridge. As you enter the room, you hear the coarse tumbling and rumbling of stone behind you. You turn around and see the way back has formed into a solid stone wall.
+[[Try to escape the room-&gt;bridgeEscape]]
+[[Walk towards the bridge-&gt;bridgeWalk]]</tw-passagedata><tw-passagedata pid="13" name="bridgeEscape" tags="" position="400,869" size="100,100">You feel yourself slip back into your old ways of thinking. &quot;This is so stupid&quot;, you say aloud. &quot;How did I get myself into this mess. This always happens. Once things start to look up for me everything falls apart. Everything falls apart for me, I can&#39;t get through a day without doubting myself, let alone change my life. I can&#39;t even stay happy for hour. I NEED TO GET OUT NOW!&quot; 
+
+You may be panick-stricken, but you are not immobilized. You tear away at the wall, banging at the black stone with your fists, raking your fingers down the face of the wall, trying to rip the stones from any hand-hold you can find. Breaking down the wall piece by piece, you would soon find out what lie behind it.
+
+[[Continue...-&gt;rebridge]]</tw-passagedata><tw-passagedata pid="14" name="bridgeWalk" tags="" position="536,997" size="100,100">In face of the decidely poor situation, you would not break down. You need to get across the bridge and you will not allow your fear to get the best of you.
+
+As you towards the bridge, all light leaves the room. You cannot see your hand before your own eyes. Despite being blinded completely you manage to suppress the urge to break into tears.
+
+[[Continue through door-&gt;bridge 2]]</tw-passagedata><tw-passagedata pid="15" name="rebridge" tags="" position="404,998" size="100,100">You are face to face with the same bridge. Turning around, you find yourself facing an identical copy of the bridge before you, in the exact room as before. Only one option lies before you now.
+[[Cross the bridge-&gt;bridgeWalk]] </tw-passagedata><tw-passagedata pid="16" name="bridge 2" tags="" position="532,1134" size="100,100">Slowly but surely, you make your way across the bridge. As you creep through the darkness towards whatever lies before you, you feel a little more confident, or rather, you are no longer paralyzed with fear. Your progress is slow, but you&#39;ve lost your sense of time in this place. How long have you been here, how long has it been since you&#39;ve seen the sky, breathed fresh air? In this room, the air is stagnant and heavy, hanging still.
+
+You think the permeating darkness is starting to let up. You think you see a light in the distance.
+[[Continue...-&gt;Bridge 3]]</tw-passagedata><tw-passagedata pid="17" name="Wall 1" tags="" position="539,1378" size="100,100">Before you stands a wall. This is like nothing you have ever seen before. The sight is biblical, a wall stretching without end. Beautiful, gleaming just as the bridge before it. Set into the magnificent brass face of the monument before is the most fantastic peice of art to be witnessed by anyone.
+[[Inspect the images on the wall...-&gt;Wall Decision]]</tw-passagedata><tw-passagedata pid="18" name="Wall Decision" tags="" position="540,1501" size="100,100">Surely you haven&#39;t seen anything like this, but the masterpeice before you is...strikingly familiar. Gazing at the elaborate reliefs depicted on the wall, one particular image stand out to you - a Heart. This image speaks deeply to you drawing your eye. Why this is so captivating to you, you do not know, but it captures your attention entirely. You find yourself inching closer and closer to inspect the heart. Your legs can&#39;t carry you there fast enough. You run faster, at a full tilt, your own heart racing. As you approach the image it expands instantaneously, the brass itself warping and wrapping, unraveling, knotting and knitting itself so quickly the brass grows red hot. In a blinding flash the image changes.
+
+The image of the heart remains, put the engraving around it has altered. You see an image of a man standing before a vast a monument, tiny before it, an obvious allusion to your current point. Looking to each side of you, to the left of you, you see the steps you took to your current position, to your right, vague depictions of a man delving deeper into the maze. Before you is an imprint in the metal in the shape of a hand. Holding yours up to the depression, you see that it is the perfect size.
+
+[[Place your hand on the wall...-&gt;voice good]]</tw-passagedata><tw-passagedata pid="19" name="voice good" tags="" position="540,1630" size="100,100">As you place you hand into the molded metal of the wall. The wall rises from the floor, screeching and scraping, unbearably loud, peircing you ear drum. The sound is maddening, and you soon find your self on the ground, your body clenching into a ball.
+
+As abruptly as the noise began, it stops. You rise to feet, struggling to stand, your head still aching from the vibrations.
+
+The vibrations fade, and you are once again surrounded by darkness.
+
+As you catch your breath, a deep soothing voice permeates the air around you.
+
+&quot;You&#39;ve made quite the choice Douglas, you&#39;ve done quite well to come this far. Please excuse the theatrics, they&#39;re only meant to scare off those who aren&#39;t willing to go the distance.&quot;
+
+[[&quot;What do you mean?-&gt;voice good 01]]</tw-passagedata><tw-passagedata pid="20" name="voice bad" tags="" position="355,1627" size="100,100">voice goes silent to doug, and the heart disapears from Doug&#39;s hand.
+Doug is trapped in the maze and must find his own way, or doug goes insane.
+Voice speaks directly to the player, and tells them of his plans.</tw-passagedata><tw-passagedata pid="21" name="Bridge 3" tags="" position="540,1257" size="100,100">The light is growing brighter. Now illuminating the bridge you&#39;ve been walking on, you realize something has changed from when you first saw the bridge. Where the bridge had previously been the same black stone as the walls of the twisted alley you arrived from, the floor now gleams and shines, and you see your reflection looking back up at you polished and warped in a lustrous brass hue. Looking back up you see the light twinkling. It can&#39;t be more than a hundred feet away now.
+
+[[Continue-&gt;Wall 1]] </tw-passagedata><tw-passagedata pid="22" name="Wall Future" tags="" position="760,1512" size="100,100">Looking to the right you see images of the man, growing larger an larger. The man depicted seems to be growing stronger and stronger. He look successful. He looks proud. He looks...happy. Everything you ever wanted in your life is before you, but it somehow feels wrong. It doesn&#39;t seem right that you should get everything you want out of pure happenstance, being at the right place at the wrong time, or in your case, the wrong place at the right time.</tw-passagedata><tw-passagedata pid="23" name="Wall Past" tags="" position="357,1500" size="100,100">[[Place your hand on the wall-&gt;voice bad]]</tw-passagedata><tw-passagedata pid="24" name="Street 4" tags="" position="367,128" size="100,100">Only a few moments after you decide to pass on interacting with the suspicious woman, the once clear blue sky, begins to grey. While sudden storms are a common place of the city, never have you seen the sky grow so dark so quickly. The sky darkens quickly from a placid blue to a most sickly looking green. Then the sky lets loose, a downpour like you&#39;ve never experienced in your life here in this sprawling monument to industry. You ignore the rain at first, but you are quick to give up, as you are absolutely drenched in seconds, and the wind pushes hard against you. You have to take cover.
+[[Run to a nearby alley-&gt;Man 1]] </tw-passagedata><tw-passagedata pid="25" name="Man 1" tags="" position="334,254" size="100,100">Ducking into the first alley you see, you are greeted by a man. Meeting you with distraught eyes and a sheepish grin, the man grabs you and tugs you out of the rain, into the cover of the alley.
+
+&quot;Damn, it&#39;s really pouring out there, isn&#39;t it? Listen, sorry about grabbing you like that, but I really need you help. My sister lost her expensive necklace somewhere in this alley. How, I don&#39;t know, but regardless, she asked me to look for it. I&#39;ve been looking for it for the last hour, and I can&#39;t find it anywhere. Mind giving me a second pair of eyes to look for it?&quot;
+
+[[&quot;No way! I don&#39;t know you! (unfinished)&quot;-&gt;Man 2a]]
+[[&quot;Sure, I&#39;ll help you out.&quot;-&gt;Man 2b]]</tw-passagedata><tw-passagedata pid="26" name="voice good 01" tags="" position="544,1750" size="100,100">&quot;There are many who would wish to do this place harm, Doug. You see, this place contains power that the oh so corruptable man would glad take and abuse, to control the down-trodden, and do-gooders such as yourself. If this power were to fall into their hands, god only knows what devastation they could cause. I know as well as any how many vindictive, power hungry, find their way here, and how hard it is to defeat someone motivated by such destructive powers. In any case, I&#39;m glad you&#39;ve come, Douglas. It&#39;s clear to me you are different from the rest. Now come, we have much to do.&quot;
+
+The darkness surrounding you has disappated. You now stand in a lonely corridor, the sound of running water and whirring gears permeates the air.
+[[&quot;What do you want from me?&quot;-&gt;voice good 02]]</tw-passagedata><tw-passagedata pid="27" name="voice good 02" tags="" position="544,1900" size="100,100">&quot;This isn&#39;t really a matter of what I want Douglas. This is closer to the issue of what we need. We need to make sure hat history stays it&#39;s course, we need to make sure that everything stays it&#39;s natural course, so that things run smoothly.&quot;
+
+[[&quot;But things aren&#39;t so good as they are already.(main path)-&gt;voice good 03]]</tw-passagedata><tw-passagedata pid="28" name="voice good 03" tags="" position="544,2050" size="100,100">&quot;Nonsense! You know otherwise Doug. You&#39;ve been turning your life around! Sure things could be a little better, but look on the brightside! Things could be a lot worse. And they will be, if we don&#39;t get a move on soon.
+
+Now, we need to do a few things up ahead. Don&#39;t worry, you can trust me I&#39;ll answer any questions you have.&quot;
+
+(link:&quot;What is this place?&quot;)[work in progress...]
+(link:&quot;Who are you?&quot;)[work in progress...]
+[[&quot;Okay, I&#39;ll help you-&gt;voice good 04]]</tw-passagedata><tw-passagedata pid="29" name="voice good 04" tags="" position="547,2177" size="100,100">As you walk down the hall, the whirring noise grows louder and louder, until eventually you come a reasonably size room. 
+
+&quot;Perfect! This is exactly where we need you to be!&quot;
+
+Thick gnarled roots, entangled in clumped masses of dirt hang from the ceiling. A few of the roots, thicker than the others hand into two large metal containers, one on each side of the room. Pouring from holes in these vessels is a dark red substance.
+
+The voice chuckles. &quot;Don&#39;t worry it&#39;s not blood, these aren&#39;t just some halls of terror, run by some diabolical madman. This substance is used as fuel to keep things running around here. As of late though, the flow of the liquid hasn&#39;t quite been keeping up, so from time to time, things malfunction. No worries, this is a quick fix. Just turn the valves on those distillers.&quot;
+
+[[Weigh your options-&gt;voice good 05]]</tw-passagedata><tw-passagedata pid="30" name="voice good 05" tags="" position="547,2327" size="100,100">Though the voice has been personable and straightforward since you met it. Something seems horribly wrong about this whole scenario. You&#39;ve been in this room mere moments, but your head has started to ache. The fluid smells  sweet, or is it savory? It smells delicious. You feel so hungry.
+
+The voice&#39;s request still stands.
+
+Drink the liquid
+[[Increase the flow of the liquid-&gt;voice good 06]]
+Stop the flow of the liquid</tw-passagedata><tw-passagedata pid="31" name="voice good 06" tags="" position="543,2468" size="100,100">As you turn the valves, the flow of the dark red ichor steadily increases, until it gushes out, flowing downward towards the far side of the room. The farside wall shudders briefly before raising, exposing another dimly lit room.
+
+&quot;Thank you Douglas. You are a good man you know. I know I&#39;ve put you in a bit of a strange situation, but you&#39;ve done well to help me. I&#39;ll make sure you get out of here alright.&quot;
+
+&quot;Thanks, but I might feel better if I knew more about you. What is your name? Who ARE you?&quot;
+
+The voice pauses for a moment, seemingly unsure on how to answer the question. 
+
+&quot;Much like the rest of this place, this is a complicated matter. My name is of little importance, but seeing as you&#39;ve put your trust in me, and I&#39;ve put mine in you, I will tell you the truth of it. I was someone, just like you to stumble into this place. How long ago, and who I was before I came here, I do not remember. Nothing from that life so long ago remains, but I know I have a duty to this place, a duty to ensure everything goes as planned.
+
+I&#39;m afraid that&#39;s all I can tell you Doug. The truth is that simple.&quot;
+
+After a few moments, the voice pipes up again. 
+
+&quot;Let&#39;s get moving Douglas, there is more to do.&quot;
+
+[[Continue...-&gt;voice good 07]]</tw-passagedata><tw-passagedata pid="32" name="voice good 07" tags="" position="543,2617" size="100,100">Walking forward and entering the next room pale moonlight shines around a short pedestal set in the center of the room. Upon the pedestal is a heart. Or rather, the heart. As depicted on the elaborate mural carved into the wall you had seen minutes earlier, the heart is strikingly large, at least the size of your head. Where you assumed that heart would have the same coloration of anatomical drawings, this heart is a sickly green, tinged with purple splotches.
+
+&quot;This is what I need your help with Douglas. You see, after I ventured into this maze, I&#39;ve become part of it, it&#39;s rooms and halls part of my very being.
+
+For the longest time, I could control the maze, as easily as one could snap their fingers, or blink their eyes. Recently however, the maze is not responding to my wishes. In the face of this loss of control I have located the source of the corruption of my powers, and it lies before you.&quot;
+
+&quot;What do you want me to do?&quot; you inquire.
+
+&quot;I need you to take it.&quot;
+
+[[Continue...-&gt;end 01]]</tw-passagedata><tw-passagedata pid="33" name="end 01" tags="" position="543,2753" size="100,100">Upon closer inspection, the heart is even stranger than it appeared from the distant view you gave it moments earlier. Not only is it discolored and swollen, but it is also covered in scales and the same thick fluid from the previous room. It smells delicious.
+
+&quot;I need you to eat it Doug.&quot;
+
+&quot;What?? Why??&quot;
+
+&quot;The only way you can change your precious life is to consume its power. Those who feast on the heart gain power beyond their imagination. Do you think you are the first to be put in this position? Millions have come before you and have all made the right decision. Now take the heart AND FEAST! (shakey text)&quot;
+
+[[Make your decision...-&gt;End Decision]]</tw-passagedata><tw-passagedata pid="34" name="End Decision" tags="" position="501,2884" size="200,100">(All links to crazy ending if you drank the liquid)
+[[Consume the power-&gt;eaten ending]]
+[[Destroy the power-&gt;destroyed ending]]
+[[Find an exit-&gt;lost ending]]</tw-passagedata><tw-passagedata pid="35" name="destroyed ending" tags="" position="543,3027" size="100,100">As you take the heart off the pedestal, it begins to beat rhytmically. Holding the disgusting, engorged organ in your hands, the very air around begins to shake violently.
+
+&quot;NOW DOUGLAS! BECOME THE MASTER OF YOUR OWN FATE!&quot;
+
+You&#39;ve been worried all your life, plagued by disinterest and lack of motivation your whole life. But now your choice could not be clearer. You slam the heart to the floor, raise your leg, and stomp.
+
+&quot;WHAT HAVE YOU DONE! YOU HAVE WASTED YOUR CHOICE AND NOW YOU WILL SUFFER!&quot;
+
+The room begins to shake violently. The pedestal crumbles to dusts, the moonlight pours into the room, flooding it in pale white. You now see the true nature of the room. Covering the walls of what you can only assume were the previous victims of this scheme are human bones, wrapped in roots. A small silver glint catches your eye from the disgusting pile of gore where you stomped on the heart. A heart shaped necklace pokes out from the pile.
+
+[[Take the necklace-&gt;ending good]]</tw-passagedata><tw-passagedata pid="36" name="ending good" tags="" position="543,3156" size="100,100">The room vanishes and you are enveloped in darkness. For how long, you cannot say. Minutes, hours you do not know. You feel cold, but are sweating profusely. Your mind is wracked with pain.
+
+You wake up. The night sky is beautiful, full of twinkling stars and a shining full moon. You get up, and look around you. You are sitting on a bench, in the bright of day. A warm breeze plays with your hair. You hear the chirping of birds, and happy conversations between other people in the park. The trees are in full bloom. It is spring time in the city. You turn your head behind you, expecting to see the dirty streets of the city once again, but where the stones of the buildings were stained with grime and the street littered with piles of trash, they now shine a brilliant white. The streets are clean, as colorful automobiles navigate around the blocks.
+
+Everything seems alright, and for the first time in a long time you actually believe everything is okay. You feel happy.
+
+You feel a slight pulse on your chest. On your neck a small silver locket hangs.
+
+In the shape of a heart.
+
+[[The End-&gt;ending final]]</tw-passagedata><tw-passagedata pid="37" name="Man 2a" tags="" position="235,377" size="100,100">The sudden downpour has not improved your mood or made you keen to help a stranger. &quot;No way! I&#39;m getting out of here.&quot; As you make your way back into the rain storm, you hear a distinct click behind you. Quickly swiveling around you come face to face with the stranger&#39;s gun.
+
+&quot;Listen here buddy. You aren&#39;t going any where without helping me find this necklace. Capiche? The thing is worth a fortune.&quot;</tw-passagedata><tw-passagedata pid="38" name="Man 2b" tags="" position="470,347" size="100,100">The man smiles at you.
+
+The man outstretches his hand. &quot;The name&#39;s Arnie.&quot;
+
+&quot;I&#39;m Doug.&quot; You say, shaking Arnie&#39;s hand.
+
+&quot;So, my sister said the last time she saw the necklace was at the restaurant she went to last night. Should be somewhere around here.
+
+[[&quot;Let&#39;s get to it.&quot;-&gt;Woman2Alley1]]
+
+(set: $arnie is true)</tw-passagedata><tw-passagedata pid="39" name="eaten ending" tags="" position="361,3018" size="100,100">You thought you could resist the urge to bite into the heart, but you were wrong. You tear off sizeable, meaty, chunk of the heart, and down it. The heart tastes oh so delicious, and green juices run down your face.
+
+&quot;Very well done Douglas. You made the right decision&quot;
+
+</tw-passagedata><tw-passagedata pid="40" name="lost ending" tags="" position="700,3015" size="100,100">You gently place the heart back onto its place onto the pedestal.
+
+&quot;What are you doing Doug?&quot; The voice is calm again.
+
+&quot;I am going to give you one more chance to do the right thing Doug. I need you to eat the heart. It really is for your own good.&quot;
+
+[[Go back-&gt;End Decision]]
+[[Continue-&gt;lost ending 02]]</tw-passagedata><tw-passagedata pid="41" name="lost ending 02" tags="" position="727,3140" size="100,100">Deciding that you want nothing to do with this twisted scheme anymore, you make a break for the entrance of the chamber.
+
+(text-style: &quot;rumble&quot;)[I SEE YOU NEED SOME CONVINCING!&quot;]
+
+The door begins to slowly rise up from the floor, and the room begins to shake rigorously. 
+The voice roars, (text-style: &quot;rumble&quot;)[YOU HAVE MADE A TERRIBLE DECISION !]
+
+Sprinting as fast you can, you just barely make it through the door. You find yourself back in the room you had been in moments ago, with the valves releasing the strange fluid. You have to throw a wrench in this machine. But how?
+
+The smallest trickle of fluid still runs through the apparatuses.
+
+[[Destroy the machine-&gt;lost ending 03]]</tw-passagedata><tw-passagedata pid="42" name="lost ending 03" tags="" position="742,3256" size="100,100">You grip one of the valves as tightly as you can, wrenching it as hard as you can away from the pipe it is attached to. The metal groans and shreiks, but the valve is holding fast. You heave with all your might. The metal creaks one last time as you break the device.
+
+The thick sweet fluid starts gushing out of the broken apparatus. You hadn&#39;t quite thought this plan through. The fluid is rising faster and faster. Soon the fluid is past your ankles, filling your shoes. The fluid is past your knees. As the fluid rises past your waist, the voice cries out.
+
+&quot;WHAT HAVE YOU DONE???&quot;
+
+For the first time you hear panic in the voice. Your body begins to go numb. 
+
+[[Your vision blurs.-&gt;lost ending 04]]</tw-passagedata><tw-passagedata pid="43" name="lost ending 04" tags="" position="766,3372" size="100,100">Your sight returns to you. You are no longer deep underground, but back where this all began, in the alley where you met the (THING). It&#39;s now night time, the moon shining down onto the buildings, forming cascading shadows and stark lines on the buildings.
+
+You look down at your legs, and notice that not everything has been restored. Your shoes and pants are still caked with the gooey sap-like substance from down below.
+
+You hear a low rumble. The rumbling grows louder and the ground begins to shake. The shaking is becoming more and more violent. Lights are turning on in every building. You hear people shouting &quot;Earthquake! Earthquake!&quot;. But you know this is no ordinary natural disaster. 
+
+All at once, every manhole cover on every street flies into the air, but you do not hear them land. The dark red slime you unleashed below pours rapidly onto the streets swallowing every poor man, woman, and child unlucky enough to be walking around on the street.
+
+The fluid runs towards you, and in moments it is far past your waist. You are quickly encased in this vile sludge, as is the entire city you called home.
+
+What have you done, Douglas Freeman, What have you done?
+
+[[The End-&gt;ending final]] </tw-passagedata><tw-passagedata pid="44" name="ending final" tags="" position="533,3490" size="100,100">(open-url: &quot;https://twinery.org/wiki/harlowe:goto-url&quot;)</tw-passagedata></tw-storydata>
